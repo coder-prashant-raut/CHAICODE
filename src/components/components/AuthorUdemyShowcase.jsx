@@ -6,12 +6,12 @@ export default function AuthorUdemyShowcase() {
     title: 'React for Beginners',
     description:
       'Learn React from scratch and build interactive web applications with modern JavaScript libraries. Start your journey with React today!',
-    price: '4999',
-    discountedPrice: '3099',
+    price: '3299₹',
+    discountedPrice: '1499₹',
     rating: 4.5,
-    numOfStudents: 21500,
-    url: 'https://www.udemy.com/course/react-for-beginners/',
-    image: 'https://www.udemy.com/course/react-for-beginners/img/course-image.jpg',
+    numOfStudents: 37975,
+    url: 'https://www.udemy.com/course/web-dev-master/?couponCode=ST7MT290425G3',
+    image: 'https://img-c.udemycdn.com/course/750x422/6035102_7d1a.jpg',
   };
 
   return (
