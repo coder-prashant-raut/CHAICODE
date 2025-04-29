@@ -1,0 +1,79 @@
+import React from 'react';
+
+const FreeAPIShowcase = () => {
+  return (
+    <section className="relative bg-gradient-to-b from-black via-zinc-900 to-black rounded-3xl px-6 sm:px-10 md:px-16 py-20 overflow-hidden font-mono text-white">
+      
+      {/* Glowing Background */}
+      <div className="absolute -top-64 -right-64 w-[700px] h-[700px] bg-indigo-500 opacity-20 rounded-full blur-[200px]"></div>
+      
+      {/* Top Fade */}
+      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+
+      {/* Code Background */}
+      <div className="absolute bottom-8 left-8 text-xs font-mono text-zinc-600 opacity-10 hidden md:block">
+{`// Use FreeAPI to power your frontend
+const apiBaseURL = "https://freeapi.dev";
+fetch(apiBaseURL + "/posts")
+  .then(res => res.json())
+  .then(data => console.log(data));
+`}
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-20 max-w-7xl mx-auto">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-300">
+          🚀 FreeAPI – Your Open Source API Powerhouse
+        </h2>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="space-y-6 text-center md:text-left">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              Unlock Your Potential with Our API Hub
+            </h3>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Practice API integration like a real-world dev! Whether you're building with React, Next.js, or Flutter, FreeAPI is your sandbox playground. ⚡
+            </p>
+
+            {/* Terminal-style Code Box */}
+            <div className="bg-black border border-zinc-800 p-4 rounded-lg text-left shadow-inner">
+              <p className="text-green-400">curl https://freeapi.dev/posts</p>
+              <p className="text-blue-400">[200] → {'{ "data": [...] }'}</p>
+            </div>
+          </div>
+
+          {/* Video Embed */}
+          <div>
+            <div className="aspect-video w-full rounded-2xl overflow-hidden border border-zinc-700 shadow-lg">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/xJq0EQMFGyg?si=ivEGWrNKsX6vYyTy"
+                title="FreeAPI Demo Video"
+                frameBorder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-16 flex justify-center">
+          <a
+            href="https://your-api-docs-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+          >
+            📚 Explore FreeAPI Docs
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FreeAPIShowcase;

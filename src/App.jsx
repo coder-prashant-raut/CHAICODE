@@ -15,7 +15,8 @@ import {
   MobileRevealSection,
   DevFaq,
   CloudTopics,
-  CommunitySection
+  CommunitySection,
+  FreeAPIShowcase
 } from './components/components/components'
 
 // Import your new pages
@@ -52,9 +53,10 @@ function App() {
               <SocialLoveSection />
 </div>
 
-              <AppDownloadSection />
               <YoutubeShowcase />
+              <FreeAPIShowcase/>
               <CommunitySection />
+              <AppDownloadSection />
               <DevFaq />
               <Footer />
             </>
