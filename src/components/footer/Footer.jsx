@@ -1,6 +1,7 @@
 // components/Footer.js
 import { FaTwitter, FaGithub, FaDiscord, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import logo from '../../assets/chaicode-white.png'
 
 export default function Footer() {
   return (
@@ -35,17 +36,20 @@ export default function Footer() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         
-        {/* Logo Section */}
-        <div className="flex flex-col items-center md:items-start">
-          <div className="text-3xl font-bold text-white mb-4">
-            <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-400 bg-clip-text text-transparent">
-              ChaiOrCode
-            </span>
-          </div>
-          <p className="text-sm text-gray-400 max-w-[200px] text-center md:text-left">
-            Learn, Build, and Grow with the power of Code and Chai! 🚀
-          </p>
-        </div>
+      {/* Logo Section */}
+<div className="flex flex-col items-center md:items-start">
+  <div className="mb-4">
+    <img
+      src={logo}
+      alt="Logo"
+      className="h-10 w-auto md:h-12" // Responsive logo sizing
+    />
+  </div>
+  <p className="text-sm text-gray-400 max-w-[200px] text-center md:text-left">
+    Learn, Build, and Grow with the power of Code and Chai! 🚀
+  </p>
+</div>
+
 
         {/* Navigation Links */}
         <div className="flex justify-center">
@@ -74,12 +78,12 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end">
           <h4 className="text-2xl font-semibold mb-4 text-white">Follow Us</h4>
           <div className="flex space-x-5 text-3xl">
-            <a href="#" className="hover:text-yellow-400 transition"><FaTwitter /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaGithub /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaDiscord /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaYoutube /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaInstagram /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaLinkedin /></a>
+            <a href="https://x.com/Hiteshdotcom" className="hover:text-yellow-400 transition"><FaTwitter /></a>
+            <a href="https://github.com/hiteshchoudhary" className="hover:text-yellow-400 transition"><FaGithub /></a>
+            <a href="https://discord.com/invite/WDrH3zuWFb" className="hover:text-yellow-400 transition"><FaDiscord /></a>
+            <a href="https://www.youtube.com/hiteshchoudharydotcom" className="hover:text-yellow-400 transition"><FaYoutube /></a>
+            <a href="https://www.instagram.com/hiteshchoudharyofficial/" className="hover:text-yellow-400 transition"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/hiteshchoudhary/" className="hover:text-yellow-400 transition"><FaLinkedin /></a>
           </div>
         </div>
 

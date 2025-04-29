@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
-import Footer from './components/footer/Footer'
-import Navbar from './components/navbar/Navbar'
+import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import {
   HeroSection,
   AuthorUdemyShowcase,
@@ -16,12 +16,12 @@ import {
   DevFaq,
   CloudTopics,
   CommunitySection,
-  FreeAPIShowcase
-} from './components/components/components'
+  FreeAPIShowcase,
+} from "./components/components/components";
 
 // Import your new pages
-import LoginPage from './pages/LoginPage'
-import NotFoundPage from './pages/NotFoundPage'
+import LoginPage from "./pages/LoginPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -36,28 +36,27 @@ function App() {
               <CodeBackground />
               <HeroSection />
 
-<div id='udemy'>
-              <AuthorUdemyShowcase />
-</div> 
-<div id='cohort'>
-
-              <Cohorts />
-</div>
+              <div id="udemy">
+                <AuthorUdemyShowcase />
+              </div>
+              <div id="cohort">
+                <Cohorts />
+              </div>
               <StudentsCompanyShowcase />
               <KeyBenefits />
               <CloudTopics />
               <Alumni />
               <MobileRevealSection />
-  
-<div id='reviews'> 
-              <SocialLoveSection />
-</div>
+
+              <div id="reviews">
+                <SocialLoveSection />
+              </div>
 
               <YoutubeShowcase />
 
-<div id='docs'>
-              <FreeAPIShowcase/>
-</div>              
+              <div id="docs">
+                <FreeAPIShowcase />
+              </div>
               <CommunitySection />
               <AppDownloadSection />
               <DevFaq />
@@ -89,7 +88,7 @@ function App() {
         />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
