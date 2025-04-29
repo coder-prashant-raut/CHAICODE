@@ -97,4 +97,5 @@ const Cohorts = () => {
   );
 };
 
+
 export default Cohorts;
