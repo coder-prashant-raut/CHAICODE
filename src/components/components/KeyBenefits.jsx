@@ -151,14 +151,17 @@ export default function KeyBenefits() {
       {/* Previous Section */}
       <div id="previous-section" className="h-50 bg-transparent text-black flex items-center justify-center">
   {/* code style heading */}
-  <div className="w-full flex flex-col items-center justify-center text-center space-y-4 px-4">
-    <h2 className="text-xl md:text-3xl font-bold text-orange-400 flex items-center gap-2">
-      &lt;<span className="text-green-400">Why Join Our Cohort?</span> /&gt;
-    </h2>
-    <p className="text-base md:text-2xl max-w-3xl text-gray-400 font-mono">
-      Experience structured learning, professional mentoring, and a community that supports your coding journey every step of the way.
-    </p>
-  </div>
+  <div className="w-full flex flex-col items-center justify-center text-center space-y-5 px-4 md:px-8 mb-6">
+  <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-500 flex items-center gap-3 drop-shadow-md">
+    &lt;<span className="text-green-400">Why Join Our Cohort?</span> /&gt;
+  </h2>
+  <p className="text-sm md:text-xl max-w-3xl text-gray-300 font-light leading-relaxed tracking-wide font-mono drop-shadow-sm">
+    Experience <span className="text-orange-400 font-semibold">structured learning</span>, 
+    expert <span className="text-green-400 font-semibold">mentorship</span>, and a powerful 
+    <span className="text-blue-400 font-semibold"> community</span> that fuels your growth—step by step.
+  </p>
+</div>
+
 </div>
 
 
@@ -178,9 +181,9 @@ export default function KeyBenefits() {
             const zIndex = 100 - Math.abs(offset);
 
             return (
-              <motion.div
+                <motion.div
                 key={index}
-                className={`absolute w-[70%] max-w-xl h-[50vh] border-2 border-amber-400 rounded-2xl shadow-xl px-10 py-4 flex items-center justify-center text-2xl font-bold text-center z-20 bg-black text-orange-500`}
+                className="absolute w-[70%] max-w-xl h-[50vh] border border-amber-400 rounded-3xl shadow-[0_10px_30px_rgba(255,193,7,0.3)] px-10 py-6 flex items-center justify-center bg-gradient-to-br from-black/60 to-zinc-900/70 backdrop-blur-lg text-orange-400 z-20"
                 animate={{
                   scale,
                   y: translateY,
@@ -189,23 +192,31 @@ export default function KeyBenefits() {
                 }}
                 initial={{
                   opacity: 0,
-                  y: offset < 0 ? -50 : 50, // for floating effect
+                  y: offset < 0 ? -50 : 50,
                 }}
                 exit={{
                   opacity: 0,
-                  y: offset < 0 ? -50 : 50, // when exiting, float up/down
+                  y: offset < 0 ? -50 : 50,
                 }}
-                transition={{ duration: 0.5 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 18,
+                  mass: 0.6,
+                }}
                 style={{ zIndex }}
               >
-                
-
-                <div className="flex flex-col items-center justify-center space-y-2">
-                <div className="md:text-4xl text-2xl">{benefit.icon}</div>
-                <h3 className="md:text-3xl text-1xl">{benefit.title}</h3>
-                <p className="md:text-xl text-sm"  >{benefit.description}</p>
-              </div>
+                <div className="flex flex-col items-center justify-center text-center space-y-4 px-4">
+                  <div className="text-4xl md:text-5xl">{benefit.icon}</div>
+                  <h3 className="text-xl md:text-3xl font-semibold tracking-wide text-white drop-shadow-sm">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-sm md:text-lg text-gray-300 font-light max-w-md leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
               </motion.div>
+              
             );
           })}
         </AnimatePresence>
