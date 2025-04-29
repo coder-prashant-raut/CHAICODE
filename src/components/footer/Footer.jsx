@@ -51,6 +51,7 @@ export default function Footer() {
         <div className="flex justify-center">
           <div className="grid grid-cols-2 gap-6 text-center md:text-left">
             <div className="space-y-3">
+              <h1 className='font-bold'>Products</h1>
               <a href="#" className="block hover:text-yellow-400 transition">Courses</a>
               <a href="#" className="block hover:text-yellow-400 transition">Cohort</a>
               <a href="#" className="block hover:text-yellow-400 transition">Coding Hero</a>
@@ -59,6 +60,8 @@ export default function Footer() {
               <a href="#" className="block hover:text-yellow-400 transition">Docs</a>
             </div>
             <div className="space-y-3">
+            <h1 className='font-bold'>Services</h1>
+
               <a href="#" className="block hover:text-yellow-400 transition">Privacy Policy</a>
               <a href="#" className="block hover:text-yellow-400 transition">Terms of Service</a>
               <a href="#" className="block hover:text-yellow-400 transition">Pricing Policy</a>

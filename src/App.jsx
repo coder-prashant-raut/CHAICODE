@@ -1,18 +1,20 @@
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
-import {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground} from './components/components/components'
+import {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase} from './components/components/components'
+
+import { Routes , Route } from 'react-router-dom'
 function App() {
 
   return (
   
    <div className='bg-black px-10 overflow-x-hidden'>
-    
-   <Navbar/>
+    <Navbar/>
    <CodeBackground/>
 
 <HeroSection/>
 <AuthorUdemyShowcase/>
 <Cohorts/>
+<StudentsCompanyShowcase/>
 <KeyBenefits/>
 <Alumni/>
 <SocialLoveSection/>
@@ -20,6 +22,15 @@ function App() {
 <YoutubeShowcase/>
 
 <Footer/>
+
+
+
+<Routes>
+    
+
+    <Route to='/login' element={<HeroSection/>} />
+   
+</Routes>
    </div>
 
   )
