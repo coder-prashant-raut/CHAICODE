@@ -1,75 +1,66 @@
 import React from "react";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { QRCodeSVG } from "qrcode.react"; // npm install qrcode.react
 
 export default function AppDownloadSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center  text-white overflow-hidden px-6 sm:px-10">
-      {/* Background Animations */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 0.2, y: 0 }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
-          className="absolute top-0 left-0 w-[600px] h-[600px] bg-purple-700/30 rounded-full blur-[150px]"
-        />
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 0.2, x: 0 }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "mirror", delay: 1 }}
-          className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full blur-[150px]"
-        />
-      </div>
+    <section className="  py-20 px-4 md:px-12">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+        
+        {/* Left: Text + QR + Buttons */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Download Our Mobile App
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            Access all features on the go. Scan the QR code or use the buttons below to download.
+          </p>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <motion.h2
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500"
-        >
-          📱 Download Our App <br /> and Power Up Your Workflow!
-        </motion.h2>
-
-        <motion.p
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto"
-        >
-          Build. Manage. Scale. Take your projects to the next level with our mobile companion. Download now for free.
-        </motion.p>
-
-        {/* Download Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6 items-center">
-          {/* Google Play */}
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="#"
-            className="flex items-center gap-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 transition-colors px-6 py-4 rounded-xl shadow-2xl"
-          >
-            <FaGooglePlay size={28} />
-            <div className="text-left">
-              <p className="text-xs uppercase text-gray-900">Get it on</p>
-              <p className="text-lg font-semibold text-black">Google Play</p>
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8">
+            {/* QR Code */}
+            <div className="flex flex-col items-center sm:items-start">
+              <QRCodeSVG value="https://your-app-link.com" size={128} />
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">Scan to download</p>
             </div>
-          </motion.a>
 
-          {/* Apple Store */}
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="#"
-            className="flex items-center gap-4 bg-gradient-to-r from-gray-300 to-gray-100 hover:from-gray-400 hover:to-gray-200 transition-colors px-6 py-4 rounded-xl shadow-2xl"
-          >
-            <FaApple size={30} className="text-black" />
-            <div className="text-left">
-              <p className="text-xs uppercase text-gray-800">Download on the</p>
-              <p className="text-lg font-semibold text-black">App Store</p>
+            {/* Download Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#"
+                className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
+              >
+                <FaGooglePlay size={28} />
+                <div className="text-left leading-tight">
+                  <p className="text-xs">GET IT ON</p>
+                  <p className="text-base font-semibold">Google Play</p>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
+              >
+                <FaApple size={28} />
+                <div className="text-left leading-tight">
+                  <p className="text-xs">Download on the</p>
+                  <p className="text-base font-semibold">App Store</p>
+                </div>
+              </a>
             </div>
-          </motion.a>
+          </div>
+        </div>
+
+        {/* Right: Mobile App Image */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <motion.img
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            src="https://play-lh.googleusercontent.com/Wd5Hi28BpyfzoRAYJbR9se2i2YpXGa3gtvTosNR8ha74ywpWEkamUvn3yyEauvtjqbs=w1052-h592-rw"
+            alt="Mobile App Preview"
+            className="max-w-xs w-full h-auto rounded-xl shadow-xl"
+          />
         </div>
       </div>
     </section>
