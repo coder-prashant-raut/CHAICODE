@@ -8,10 +8,11 @@ import AppDownloadSection from "./AppDownloadSection";
 import YoutubeShowcase from "./YoutubeShowcase";
 import StudentsCompanyShowcase from "./StudentsCompanyShowcase";
 import MobileRevealSection from "./MobileRevealSection";
+import CloudTopics from "./CloudTopics";
 import DevFaq from "./DevFaq";
 //background animations//
 import CodeBackground from "./CodeBackground";
 
 
-export  {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection, DevFaq}
+export  {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection,CloudTopics, DevFaq}
 

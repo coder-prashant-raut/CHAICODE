@@ -5,26 +5,33 @@ export default function YoutubeShowcase() {
   const channels = [
     {
       name: 'Chai Aur Code',
-      url: 'https://youtube.com/@chaiaurcode',
-      subscribers: '120K+ Subscribers',
+      url: 'https://www.youtube.com/@chaiaurcode',
+      subscribers: '619K+ Subscribers',
       description: 'Learn coding, web dev, and tech with chai!',
-      thumbnail: 'https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg',
+      thumbnail: 'https://avatars.githubusercontent.com/u/11613311?v=4',
       language: 'Hindi',
     },
     {
-      name: 'Code with Coffee',
-      url: 'https://youtube.com/@codewithcoffee',
-      subscribers: '80K+ Subscribers',
+      name: 'Hitesh Chaudhary',
+      url: 'https://www.youtube.com/@HiteshCodeLab',
+      subscribers: '989K+ Subscribers',
       description: 'Real-world projects, DSA, and tech careers.',
-      thumbnail: 'https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg',
+      thumbnail: 'https://avatars.githubusercontent.com/u/11613311?v=4',
       language: 'English',
     },
   ];
 
   return (
-    <section className="w-full py-16 px-6 bg-gradient-to-tr from-[#0f0f0f] via-[#111] to-[#0f0f0f] text-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="w-full py-20 px-6 bg-transparent text-white font-mono">
+      <div className="max-w-4xl mx-auto text-center mb-16">
+        <h2 className="text-4xl font-extrabold">🔥 Best YouTube Channels to Learn Tech</h2>
+        <div className="mt-2 w-24 h-1 mx-auto bg-orange-500 rounded-full"></div>
+        <p className="mt-4 text-gray-300 text-sm md:text-base">
+          Curated by learners, loved by developers – explore top coding channels that teach with clarity, passion, and real-world insights.
+        </p>
+      </div>
 
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left - Banner */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -34,7 +41,7 @@ export default function YoutubeShowcase() {
         >
           <div className="relative w-full h-96 bg-gray-900 rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80"
+              src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-in-headphones-showing-programming-process-on-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Developer Banner"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -88,7 +95,6 @@ export default function YoutubeShowcase() {
             </motion.a>
           ))}
         </motion.div>
-
       </div>
     </section>
   );
