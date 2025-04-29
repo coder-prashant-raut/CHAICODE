@@ -19,8 +19,8 @@ import {
 } from './components/components/components'
 
 // Import your new pages
-import LoginPage from './components/pages/LoginPage'
-import NotFoundPage from './components/pages/NotFoundPage'
+import LoginPage from './pages/LoginPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   return (
@@ -34,14 +34,24 @@ function App() {
               <Navbar />
               <CodeBackground />
               <HeroSection />
+
+<div id='udemy'>
               <AuthorUdemyShowcase />
+</div> 
+<div id='cohort'>
+
               <Cohorts />
+</div>
               <StudentsCompanyShowcase />
               <KeyBenefits />
               <CloudTopics />
               <Alumni />
               <MobileRevealSection />
+  
+<div id='reviews'> 
               <SocialLoveSection />
+</div>
+
               <AppDownloadSection />
               <YoutubeShowcase />
               <CommunitySection />
