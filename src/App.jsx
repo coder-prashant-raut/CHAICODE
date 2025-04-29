@@ -1,11 +1,23 @@
-
 import './App.css'
-
+import Footer from './components/footer/Footer'
+import Navbar from './components/navbar/Navbar'
+import {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase} from './components/components/components'
 function App() {
 
   return (
    <>
-   <h1>hello</h1>
+   <Navbar/>
+
+    <HeroSection/>
+    <AuthorUdemyShowcase/>
+    <Cohorts/>
+    <KeyBenefits/>
+    <Alumni/>
+    <SocialLoveSection/>
+    <AppDownloadSection/>
+    <YoutubeShowcase/>
+
+   <Footer/>
    </>
   )
 }

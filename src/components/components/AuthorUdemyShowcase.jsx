@@ -1,7 +1,7 @@
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-export default function AuthorCourseShowcase() {
+export default function AuthorUdemyShowcase() {
   const course = {
     title: 'React for Beginners',
     description:

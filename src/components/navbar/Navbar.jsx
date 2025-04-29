@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Menu, X, GraduationCap, BookOpen, FileText, Star } from "lucide-react";
-import chailogowhite from "../../src/assets/chaicode-white.png";
-import chailogoblack from "../../src/assets/chaicode-black.png";
+import chailogowhite from "../../assets/chaicode-white.png";
+import chailogoblack from "../../assets/chaicode-black.png";
 
 // Nav items with icons
 const navItems = [
