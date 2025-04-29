@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Menu, X, GraduationCap, BookOpen, FileText, Star } from "lucide-react";
+import { Link } from 'react-router-dom';
 import chailogowhite from "../../assets/chaicode-white.png";
 import chailogoblack from "../../assets/chaicode-black.png";
 
@@ -61,9 +62,11 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center h-16 relative">
           {/* Logo */}
-          <div className="font-bold text-lg">
+         <Link to={"/"}>
+         <div className="font-bold text-lg">
             <img className="md:h-12 h-8" src={scrolled ? chailogoblack : chailogowhite} alt="" />
           </div>
+          </Link>
 
           {/* Desktop Links */}
           <div className="hidden md:flex gap-6 text-sm font-medium">
@@ -89,9 +92,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Login */}
-          <button className="hidden md:block px-4 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium shadow-md transition-all duration-300">
-            Login
-          </button>
+         
+<Link to="/login">
+  <button className="hidden md:block px-4 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium shadow-md transition-all duration-300">
+    Login
+  </button>
+</Link>
 
           {/* Hamburger */}
           <button
@@ -135,9 +141,16 @@ export default function Navbar() {
               );
             })}
 
+            
+
+
+            <Link to="/login">
             <button className="w-full px-4 py-2 rounded-md bg-orange-600 text-white hover:bg-orange-700 transition">
               Login
             </button>
+</Link>
+
+
           </div>
         </div>
       </nav>
