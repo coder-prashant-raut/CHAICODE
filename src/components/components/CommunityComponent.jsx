@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CommunitySection = () => {
-  const discordLink = 'https://discord.com/channels/1022510020736331806/1022644903248920656'; // Replace this
+  const discordLink = 'https://discord.com/invite/WDrH3zuWFb'; // Replace this
 
   return (
     <section className="relative text-white py-20 px-6 md:px-12 max-w-6xl mx-auto">
@@ -43,7 +43,7 @@ const CommunitySection = () => {
 <code className="text-white">&#123;</code><br />
 &nbsp;&nbsp;<code className="text-yellow-400">name</code>: <code className="text-emerald-400">"We Write Code"</code>,<br />
 &nbsp;&nbsp;<code className="text-yellow-400">platform</code>: <code className="text-emerald-400">"Discord"</code>,<br />
-&nbsp;&nbsp;<code className="text-yellow-400">members</code>: <code className="text-emerald-400">"80K+"</code>,<br />
+&nbsp;&nbsp;<code className="text-yellow-400">members</code>: <code className="text-emerald-400">"82.4K+"</code>,<br />
 &nbsp;&nbsp;<code className="text-yellow-400">mission</code>: <code className="text-emerald-400">"Code. Collaborate. Create."</code>,<br />
 &nbsp;&nbsp;<code className="text-yellow-400">join</code>: <code className="text-pink-400">() =&gt; </code><code className="text-white">&#123; return </code><code className="text-emerald-400">"🚀 Let's code the future!"</code>; <code className="text-white">&#125;</code><br />
 <code className="text-white">&#125;;</code>
