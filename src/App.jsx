@@ -1,6 +1,6 @@
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
-import {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection, DevFaq, CloudTopics} from './components/components/components'
+import {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection, DevFaq, CloudTopics, CommunitySection} from './components/components/components'
 
 import { Routes , Route } from 'react-router-dom'
 function App() {
@@ -22,6 +22,7 @@ function App() {
 <SocialLoveSection/>
 <AppDownloadSection/>
 <YoutubeShowcase/>
+<CommunitySection/>
 <DevFaq/>
 
 <Footer/>
