@@ -180,7 +180,7 @@ export default function KeyBenefits() {
             return (
               <motion.div
                 key={index}
-                className={`absolute w-[70%] max-w-xl h-[50vh] border-2 border-amber-400 rounded-2xl shadow-xl p-10 flex items-center justify-center text-2xl font-bold text-center z-20 bg-black text-orange-500`}
+                className={`absolute w-[70%] max-w-xl h-[50vh] border-2 border-amber-400 rounded-2xl shadow-xl px-10 py-4 flex items-center justify-center text-2xl font-bold text-center z-20 bg-black text-orange-500`}
                 animate={{
                   scale,
                   y: translateY,
@@ -200,7 +200,7 @@ export default function KeyBenefits() {
               >
                 
 
-                <div className="flex flex-col items-center justify-center space-y-4">
+                <div className="flex flex-col items-center justify-center space-y-2">
                 <div className="md:text-4xl text-2xl">{benefit.icon}</div>
                 <h3 className="md:text-3xl text-1xl">{benefit.title}</h3>
                 <p className="md:text-xl text-sm"  >{benefit.description}</p>
@@ -214,7 +214,7 @@ export default function KeyBenefits() {
       {/* Next Section */}
       {activeIndex === benefits.length - 1 && (
         <div id="next-section" className="h-10 bg-black text-orange-500 flex items-center justify-center">
-          <h1 className="text-4xl font-bold">Next Section 👇</h1>
+         <button className="border-2 border-orange-400 px-8 py-3 hover:text-3xl cursor-pointer text-2xl rounded-2xl">Join Cohort </button>
         </div>
       )}
     </div>

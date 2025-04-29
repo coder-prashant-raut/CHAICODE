@@ -6,8 +6,8 @@ export default function AuthorUdemyShowcase() {
     title: 'React for Beginners',
     description:
       'Learn React from scratch and build interactive web applications with modern JavaScript libraries. Start your journey with React today!',
-    price: '$99.99',
-    discountedPrice: '$49.99',
+    price: '4999',
+    discountedPrice: '3099',
     rating: 4.5,
     numOfStudents: 21500,
     url: 'https://www.udemy.com/course/react-for-beginners/',
@@ -15,7 +15,7 @@ export default function AuthorUdemyShowcase() {
   };
 
   return (
-    <section className="w-full py-16 px-6 bg-gradient-to-r from-[#1f1f1f] via-[#121212] to-[#1f1f1f] text-white">
+    <section className="w-full py-16 px-6 bg-transparent text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left - Course Image and Details */}
@@ -40,10 +40,11 @@ export default function AuthorUdemyShowcase() {
           className="flex flex-col space-y-6"
         >
           {/* Heading Section */}
-          <h2 className="text-4xl font-bold text-orange-400 relative inline-block">
+          <h2 className="text-4xl font-bold pb-4  text-orange-400 relative inline-block">
             Featured Course: <span className="text-white">{course.title}</span>
             <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-400 transform scale-x-100"></span>
           </h2>
+          
 
           <p className="text-lg text-gray-300">{course.description}</p>
 
