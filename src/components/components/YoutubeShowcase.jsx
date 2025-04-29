@@ -22,24 +22,26 @@ export default function YoutubeShowcase() {
   ];
 
   return (
-    <section className="w-full py-20 px-6 bg-transparent text-white font-mono">
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-extrabold">🔥 Best YouTube Channels to Learn Tech</h2>
-        <div className="mt-2 w-24 h-1 mx-auto bg-orange-500 rounded-full"></div>
-        <p className="mt-4 text-gray-300 text-sm md:text-base">
+    <section className="w-full py-20 px-4 sm:px-6 bg-transparent text-white font-mono">
+      <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl font-extrabold">
+          🔥 Best YouTube Channels to Learn Tech
+        </h2>
+        <div className="mt-2 w-24 h-1 mx-auto bg-orange-500 rounded-full" />
+        <p className="mt-4 text-gray-300 text-sm sm:text-base px-2">
           Curated by learners, loved by developers – explore top coding channels that teach with clarity, passion, and real-world insights.
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
         {/* Left - Banner */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center items-center"
+          className="w-full lg:w-1/2 flex justify-center"
         >
-          <div className="relative w-full h-96 bg-gray-900 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="w-full h-64 sm:h-80 md:h-96 bg-gray-900 rounded-3xl overflow-hidden shadow-2xl">
             <img
               src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-in-headphones-showing-programming-process-on-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Developer Banner"
@@ -50,10 +52,10 @@ export default function YoutubeShowcase() {
 
         {/* Right - Channel Cards */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col space-y-10"
+          className="w-full lg:w-1/2 flex flex-col space-y-8"
         >
           {channels.map((channel, index) => (
             <motion.a
@@ -61,21 +63,21 @@ export default function YoutubeShowcase() {
               href={channel.url}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.03 }}
-              className="relative bg-[#1a1a1a] hover:bg-[#222] transition-all p-6 rounded-2xl shadow-xl flex items-center gap-6 group overflow-visible"
+              whileHover={{ scale: 1.02 }}
+              className="relative bg-[#1a1a1a] hover:bg-[#222] transition-all p-5 sm:p-6 rounded-2xl shadow-xl flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 group"
             >
-              {/* Animated Language Badge */}
+              {/* Badge */}
               <motion.div
                 initial={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="absolute -top-4 -left-4 bg-orange-500 text-black font-bold text-xs px-4 py-2 rounded-full shadow-lg uppercase animate-pulse border-2 border-white"
+                className="absolute top-2 left-2 bg-orange-500 text-black font-bold text-xs px-3 py-1 rounded-full shadow-lg uppercase border-2 border-white"
               >
                 {channel.language}
               </motion.div>
 
               {/* Thumbnail */}
-              <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-xl border-2 border-gray-700">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 overflow-hidden rounded-xl border border-gray-700">
                 <img
                   src={channel.thumbnail}
                   alt={channel.name}
@@ -84,14 +86,14 @@ export default function YoutubeShowcase() {
               </div>
 
               {/* Channel Info */}
-              <div className="flex flex-col">
-                <h3 className="text-2xl font-bold">{channel.name}</h3>
+              <div className="flex-1">
+                <h3 className="text-xl sm:text-2xl font-bold">{channel.name}</h3>
                 <p className="text-gray-400 text-sm">{channel.subscribers}</p>
                 <p className="text-gray-300 mt-2 text-sm">{channel.description}</p>
               </div>
 
-              {/* Arrow */}
-              <FaArrowRight className="text-gray-400 ml-auto text-2xl opacity-0 group-hover:opacity-100 transition" />
+              {/* Arrow Icon */}
+              <FaArrowRight className="text-gray-400 text-xl opacity-0 group-hover:opacity-100 transition self-end sm:self-center" />
             </motion.a>
           ))}
         </motion.div>

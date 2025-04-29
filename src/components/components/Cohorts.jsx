@@ -85,15 +85,18 @@ const courses = [
 const Cohorts = () => {
   return (
     <div className="w-full py-10 px-4 md:px-12 bg-black text-white">
-      <h1 className="text-2xl md:text-3xl font-bold mb-6">
-        🌀 Top Courses
-      </h1>
-      <div className="flex space-x-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-1">
-        {courses.map((course) => (
-          <Card key={course.id} {...course} />
-        ))}
-      </div>
+    <h1 className="text-2xl md:text-3xl font-bold mb-6">
+      🌀 Top Courses
+    </h1>
+    <div className="flex space-x-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-1">
+      {courses.map((course) => (
+        <div key={course.id} className="min-w-full md:min-w-[400px] snap-start">
+          <Card {...course} />
+        </div>
+      ))}
     </div>
+  </div>
+  
   );
 };
 
