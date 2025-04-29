@@ -54,7 +54,10 @@ function App() {
 </div>
 
               <YoutubeShowcase />
+
+<div id='docs'>
               <FreeAPIShowcase/>
+</div>              
               <CommunitySection />
               <AppDownloadSection />
               <DevFaq />

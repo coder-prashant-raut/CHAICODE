@@ -9,7 +9,7 @@ export default function AppDownloadSection() {
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
         
         {/* Left: Text + QR + Buttons */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <div className="w-full flex flex-col justify-center items-center lg:w-1/2 text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Download Our Mobile App
           </h2>
@@ -25,10 +25,10 @@ export default function AppDownloadSection() {
             </div>
 
             {/* Download Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col justify-center items-center sm:flex-row gap-4">
               <a
                 href="#"
-                className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
+                className="flex items-center gap-3 px-6 py-4 border-2 border-amber-400 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
               >
                 <FaGooglePlay size={28} />
                 <div className="text-left leading-tight">
@@ -39,7 +39,7 @@ export default function AppDownloadSection() {
 
               <a
                 href="#"
-                className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
+                className="flex items-center gap-3 px-6 py-4 border-2 border-amber-400 bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition"
               >
                 <FaApple size={28} />
                 <div className="text-left leading-tight">

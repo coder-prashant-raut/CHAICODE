@@ -10,21 +10,13 @@ const FreeAPIShowcase = () => {
       {/* Top Fade */}
       <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
 
-      {/* Code Background */}
-      <div className="absolute bottom-8 left-8 text-xs font-mono text-zinc-600 opacity-10 hidden md:block">
-{`// Use FreeAPI to power your frontend
-const apiBaseURL = "https://freeapi.dev";
-fetch(apiBaseURL + "/posts")
-  .then(res => res.json())
-  .then(data => console.log(data));
-`}
-      </div>
+    
 
       {/* Main Content */}
       <div className="relative z-20 max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-300">
-          🚀 FreeAPI – Your Open Source API Powerhouse
+           FreeAPI – Your Open Source API Powerhouse
         </h2>
 
         {/* Grid */}
@@ -40,7 +32,7 @@ fetch(apiBaseURL + "/posts")
 
             {/* Terminal-style Code Box */}
             <div className="bg-black border border-zinc-800 p-4 rounded-lg text-left shadow-inner">
-              <p className="text-green-400">curl https://freeapi.dev/posts</p>
+              <p className="text-green-400 overflow-auto">fetch https://freeapi/public/quotes/quote/random</p>
               <p className="text-blue-400">[200] → {'{ "data": [...] }'}</p>
             </div>
           </div>
@@ -61,9 +53,9 @@ fetch(apiBaseURL + "/posts")
         </div>
 
         {/* CTA Button */}
-        <div className="mt-16 flex justify-center">
+        <div className="mt-16 flex justify-center ">
           <a
-            href="https://your-api-docs-link.com"
+            href="https://freeapi.hashnode.space/api-guide/apireference/getARandomQuote"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
