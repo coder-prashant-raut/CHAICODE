@@ -32,9 +32,9 @@ export default function StudentsCompanyShowcase() {
         <div className="w-20 mx-auto h-1 bg-blue-500 rounded-full mb-8"></div>
       </div>
 
-      {/* Scrolling Student Placements */}
-      <div className="overflow-hidden relative z-10 mt-12">
-        <div className="flex gap-6 py-4 animate-scroll whitespace-nowrap will-change-transform">
+      {/* Scrolling Cards with Gradient Mask */}
+      <div className="overflow-hidden w-[95%] xs:w-[80%] mx-auto py-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] relative z-10">
+        <div className="flex min-w-max animate-marquee-infinite gap-6">
           {[...placements, ...placements].map((item, index) => (
             <div
               key={index}
@@ -48,14 +48,14 @@ export default function StudentsCompanyShowcase() {
         </div>
       </div>
 
-      {/* Scroll Animation */}
+      {/* Tailwind scroll animation config */}
       <style>{`
-        @keyframes scroll {
+        @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        .animate-scroll {
-          animation: scroll 40s linear infinite;
+        .animate-marquee-infinite {
+          animation: marquee 40s linear infinite;
         }
       `}</style>
     </div>
