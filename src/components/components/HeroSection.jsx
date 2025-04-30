@@ -78,7 +78,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative rounded-2xl flex flex-col items-center justify-center px-6 py-24 md:py-32 text-white text-center overflow-hidden bg-transparent"
+      className="relative rounded-2xl flex flex-col items-center justify-center px-6 py-10 md:py-15 text-white text-center overflow-hidden bg-transparent"
       style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}
     >
       {/* 🔶 Orange Parallax Background Blob */}
@@ -101,8 +101,10 @@ const HeroSection = () => {
       </button>
 
       {/* 👑 Heading */}
-      <h1 className="text-3xl sm:text-2xl md:text-2xl font-semibold leading-tight max-w-3xl mt-10 mb-6 tracking-tight">
-        Empower Your Coding Journey with{" "}
+      <span className="mt-4 text-2xl  md:text-3xl border-b-2 border-amber-500/50 "> Empower Your Coding Journey with{" "}</span>
+
+      <h1 className="text-2xl  md:text-3xl font-semibold leading-tight max-w-3xl tracking-tight ">
+        <br />
         <span
           className="text-5xl sm:text-4xl md:text-6xl font-mono border-b-4 border-solid border-yellow-400 text-pink-400 cursor-pointer"
         >
@@ -117,7 +119,7 @@ const HeroSection = () => {
       </h1>
 
       {/* 📖 Description */}
-      <p className="text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed mb-1 text-white/80">
+      <p className="text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed mt-5 text-white/80">
         We’re not just another course. Join bounties, peer learning, code
         reviews, <br />
         virtual hostel vibes, alumni community, group projects & more. Let’s
