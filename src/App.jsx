@@ -25,7 +25,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <div className="w-full max-w-screen bg-black text-white overflow-x-hidden">
+    <div className="w-full max-w-screen bg-black text-white overflow-x-hidden flex flex-col justify-center items-center">
       <Routes>
         {/* Main Home Page */}
         <Route
@@ -33,7 +33,9 @@ function App() {
           element={
             <>
               <Navbar />
-              <CodeBackground />
+ 
+<div className="max-w-7xl">
+<CodeBackground />
               <HeroSection />
 
               <div id="udemy">
@@ -60,6 +62,9 @@ function App() {
               <CommunitySection />
               <AppDownloadSection />
               <DevFaq />
+</div>
+
+
               <Footer />
             </>
           }

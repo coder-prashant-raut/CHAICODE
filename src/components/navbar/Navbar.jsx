@@ -53,18 +53,18 @@ export default function Navbar() {
     <>
       {/* Navbar Container */}
       <nav
-        ref={navRef}
-        className={`fixed top-0 left-0 right-0 z-100 transition-all duration-300 ease-in-out backdrop-blur-md px-3
-          ${scrolled
-            ? "bg-white/80 text-black shadow-xl border-b border-gray-200 rounded-xl mt-4 mx-4 md:mx-40 max-w-full"
-            : "bg-gradient-to-b from-slate-950 via-slate-90 rounded-none border-white/10 mt-0 mx-0 max-w-full"
-          } overflow-x-hidden`}
-      >
+      ref={navRef}
+      className={`fixed top-0 left-0 right-0 z-100 transition-all  duration-400 ease-in-out backdrop-blur-md px-3
+        ${scrolled
+          ? "bg-white/80 text-black shadow-xl border-b border-gray-200 rounded-xl mt-4 mx-4 md:mx-40 max-w-full py-0"
+          : "bg-gradient-to-b from-slate-950 via-slate-90 rounded-none border-white/10 mt-0 mx-0 max-w-full py-2"
+        } overflow-x-hidden`}
+    >
         <div className="max-w-7xl mx-auto flex justify-between items-center h-16 relative">
           {/* Logo */}
          <Link to={"/"}>
          <div className="font-bold text-lg">
-            <img className="md:h-12 h-8" src={scrolled ? chailogoblack : chailogowhite} alt="" />
+            <img className="md:h-10 h-6" src={scrolled ? chailogoblack : chailogowhite} alt="" />
           </div>
           </Link>
 

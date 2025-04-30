@@ -5,7 +5,7 @@ import logo from '../../assets/chaicode-white.png'
 
 export default function Footer() {
   return (
-    <footer className="relative min-h-[80vh] bg-black text-gray-300 py-16 px-6 overflow-hidden group">
+    <footer className="relative w-full min-h-[80vh] bg-black text-gray-300 py-16 px-6 overflow-hidden group">
       {/* CHAICODE background */}
       <div className="absolute inset-0 z-0 flex items-end justify-center opacity-10 pointer-events-none">
         <motion.div
