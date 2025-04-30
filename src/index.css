@@ -238,3 +238,28 @@ body {
     }
   }
 }
+
+
+
+
+/* /cloudtopis */
+
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  .animate-marquee-infinite {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee-reverse-infinite {
+    animation: marquee-reverse 30s linear infinite;
+  }
+}
