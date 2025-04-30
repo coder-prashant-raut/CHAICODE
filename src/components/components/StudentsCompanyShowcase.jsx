@@ -19,7 +19,7 @@ export default function StudentsCompanyShowcase() {
      <div className="relative max-w-7xl py-20 px-4 overflow-hidden bg-transparent text-white">
       {/* Glowing Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-pink-500/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-pink-500/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       {/* Heading */}

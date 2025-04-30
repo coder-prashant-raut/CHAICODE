@@ -34,7 +34,7 @@ function App() {
             <>
               <Navbar />
  
-<div className="max-w-7xl">
+<div className="w-full max-w-full lg:max-w-7xl">
 <CodeBackground />
               <HeroSection />
 
