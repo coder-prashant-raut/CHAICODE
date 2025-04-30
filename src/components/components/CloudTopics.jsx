@@ -81,7 +81,7 @@ const HoveredVideoCard = ({ topic }) => {
   );
 };
 
-const TopicCloud = () => {
+const CloudTopics = () => {
   const [hoveredTopic, setHoveredTopic] = useState(null);
 
   return (
@@ -110,4 +110,4 @@ const TopicCloud = () => {
   );
 };
 
-export default TopicCloud;
+export default CloudTopics;

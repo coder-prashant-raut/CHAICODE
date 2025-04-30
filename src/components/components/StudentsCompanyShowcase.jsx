@@ -15,10 +15,11 @@ const placements = [
 
 export default function StudentsCompanyShowcase() {
   return (
-    <div className="relative py-20 px-4 overflow-hidden bg-transparent text-white">
+   <section className="flex justify-center items-center">
+     <div className="relative max-w-7xl py-20 px-4 overflow-hidden bg-transparent text-white">
       {/* Glowing Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-blue-500/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-pink-500/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       {/* Heading */}
@@ -48,16 +49,8 @@ export default function StudentsCompanyShowcase() {
         </div>
       </div>
 
-      {/* Tailwind scroll animation config */}
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee-infinite {
-          animation: marquee 40s linear infinite;
-        }
-      `}</style>
+      
     </div>
+   </section>
   );
 }

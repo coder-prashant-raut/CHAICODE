@@ -263,3 +263,13 @@ body {
     animation: marquee-reverse 30s linear infinite;
   }
 }
+
+/* studentcompanyshowcase */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee-infinite {
+  animation: marquee 40s linear infinite;
+}
