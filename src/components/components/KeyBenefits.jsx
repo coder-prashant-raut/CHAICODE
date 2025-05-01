@@ -149,9 +149,9 @@ export default function KeyBenefits() {
   return (
     <div className="w-full relative z-20">
       {/* Previous Section */}
-      <div id="previous-section" className="h-50 bg-transparent text-black flex items-center justify-center">
+      <div id="previous-section" className="h-70 bg-transparent text-black flex items-center justify-center">
   {/* code style heading */}
-  <div className="w-full flex flex-col items-center justify-center text-center space-y-5 px-4 md:px-8 mb-6">
+  <div className="w-full flex flex-col items-center justify-center text-center space-y-5 px-4 md:px-8 mb-2">
   <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-500 flex items-center gap-3 drop-shadow-md">
     &lt;<span className="text-green-400">Why Join Our Cohort?</span> /&gt;
   </h2>
