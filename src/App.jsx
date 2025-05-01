@@ -38,28 +38,34 @@ function App() {
 <CodeBackground />
               <HeroSection />
 
-              <div id="udemy">
-                <AuthorUdemyShowcase />
-              </div>
-              <div id="cohort">
-                <Cohorts />
-              </div>
-              <StudentsCompanyShowcase />
-              <KeyBenefits />
-              <CloudTopics />
-              <Alumni />
-              <MobileRevealSection />
-
+              
               <div id="reviews">
                 <SocialLoveSection />
               </div>
 
               <YoutubeShowcase />
 
+              <div id="cohort">
+                <Cohorts />
+              </div>
+
+              <div id="udemy">
+                <AuthorUdemyShowcase />
+              </div>
+             
+              <KeyBenefits />
+
+              <StudentsCompanyShowcase />
+
+              <CloudTopics />
+
+              <Alumni />
+              <MobileRevealSection />
+              <CommunitySection />
+
               <div id="docs">
                 <FreeAPIShowcase />
               </div>
-              <CommunitySection />
               <AppDownloadSection />
               <DevFaq />
 </div>

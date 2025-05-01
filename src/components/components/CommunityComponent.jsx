@@ -16,7 +16,7 @@ const CommunitySection = () => {
         </h2>
 
         {/* Description */}
-        <p className="max-w-2xl text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed transform-gpu transition duration-300 ease-in-out hover:scale-105 text-orange-200">
+        <p className="max-w-2xl text-xl md:text-2xl  mb-12 leading-relaxed transform-gpu transition duration-300 ease-in-out hover:scale-105 text-orange-200">
           Join a thriving community of passionate developers, share ideas, collaborate, and build amazing projects together. Let's create something extraordinary!
         </p>
 
