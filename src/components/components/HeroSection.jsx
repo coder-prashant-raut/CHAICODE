@@ -79,7 +79,7 @@ const HeroSection = () => {
     <section
       id="hero"
       className="relative rounded-2xl flex flex-col items-center justify-center px-6 py-10 md:py-15 text-white text-center overflow-hidden bg-transparent"
-      style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}
+      // style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}
     >
 
       {/* below the heaidng and intro section all before video  */}
@@ -92,7 +92,7 @@ const HeroSection = () => {
   <span className="text-green-400 text-sm sm:text-base">console.log(trust)</span>
   <button
     aria-label="Trusted by 1.5 million learners"
-    className="mt-2 flex items-center gap-2 border border-orange-400 text-orange-400 font-medium text-sm md:text-base px-3 py-1.5 rounded-full shadow hover:scale-105 transition-transform duration-300"
+    className="mt-2 flex items-center gap-2 border border-orange-400 text-orange-400 font-medium text-sm md:text-base px-3 py-1.5 rounded-full shadow hover:scale-105 transition-transform duration-300 font-sans"
   >
     <CheckCircle size={18} className="text-orange-400" />
     <span>Trusted by 1.5M+ Code Learners</span>
@@ -110,7 +110,7 @@ const HeroSection = () => {
   </h1>
 
   {/* 📖 Description */}
-  <p className="mt-6 text-white/80 text-base md:text-lg max-w-3xl leading-relaxed">
+  <p className="mt-6 text-white/80 text-base md:text-lg max-w-3xl leading-relaxed font-sans">
     We’re not just another course. Join bounties, peer learning, code reviews, <br />
     virtual hostel vibes, alumni community, group projects & more. Let’s grow together 🚀
   </p>
@@ -122,7 +122,7 @@ const HeroSection = () => {
         key={idx}
         className="flex items-center gap-2 text-white/80 hover:text-white border border-orange-500 px-4 py-2 rounded-md shadow 
                    hover:bg-orange-500 hover:-translate-y-1 hover:shadow-lg hover:scale-105 
-                   transition-all duration-300 ease-in-out text-sm font-medium"
+                   transition-all duration-300 ease-in-out text-sm font-medium "
       >
         <span className="text-lg">{btn.icon}</span>
         <span>{btn.label}</span>
@@ -131,7 +131,7 @@ const HeroSection = () => {
   </div>
 
   {/* 🚀 CTA Button with Gradient Glow Border */}
-  <div className="relative mt-10">
+  <div className="relative mt-10 font-sans">
     {/* Animated Glow Border */}
     <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 animate-spin-slow z-0 blur-sm" />
     
