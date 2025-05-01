@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
-import { BsCheckCircle } from "react-icons/bs"; // Example icon (You can use other icons as needed)
 import benefits from "../../data/benefits";
 
 

@@ -1,3 +1,6 @@
+import { BsCheckCircle } from "react-icons/bs"; 
+
+// in this file we have icon element but in js we cant use it so that the reason the file name is .jsx
 
 const benefits = [
   {
