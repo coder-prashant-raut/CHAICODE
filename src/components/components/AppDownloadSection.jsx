@@ -15,7 +15,7 @@ export default function AppDownloadSection() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"
+            className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-orange-400 to-orange-200 text-transparent bg-clip-text"
           >
             Experience Learning on the Go
           </motion.h2>

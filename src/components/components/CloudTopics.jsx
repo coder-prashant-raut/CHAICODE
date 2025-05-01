@@ -72,7 +72,7 @@ const CloudTopics = () => {
     <div className="w-full max-w-full lg:max-w-7xl">
     <div className="max-w-4xl mx-auto text-center px-4">
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          <span className="bg-clip-text text-transparent bg-orange-500">
             Topics Cloud
           </span>
         </h1>

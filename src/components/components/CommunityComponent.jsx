@@ -11,12 +11,12 @@ const CommunitySection = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* Main Title */}
-        <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 mb-8 leading-tight tracking-tight">
+        <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 mb-8 leading-tight tracking-tight">
           Connect. Build. Code. Innovate.
         </h2>
 
         {/* Description */}
-        <p className="max-w-2xl text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed transform-gpu transition duration-300 ease-in-out hover:scale-105 hover:text-yellow-200">
+        <p className="max-w-2xl text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed transform-gpu transition duration-300 ease-in-out hover:scale-105 text-orange-200">
           Join a thriving community of passionate developers, share ideas, collaborate, and build amazing projects together. Let's create something extraordinary!
         </p>
 
@@ -40,11 +40,11 @@ const CommunitySection = () => {
             <code className="text-cyan-400">community </code>
             <code className="text-pink-400">= </code>
             <code className="text-white">&#123;</code><br />
-            &nbsp;&nbsp;<code className="text-yellow-400">name</code>: <code className="text-emerald-400">"We Write Code"</code>,<br />
-            &nbsp;&nbsp;<code className="text-yellow-400">platform</code>: <code className="text-emerald-400">"Discord"</code>,<br />
-            &nbsp;&nbsp;<code className="text-yellow-400">members</code>: <code className="text-emerald-400">"82.4K+"</code>,<br />
-            &nbsp;&nbsp;<code className="text-yellow-400">mission</code>: <code className="text-emerald-400">"Code. Collaborate. Create."</code>,<br />
-            &nbsp;&nbsp;<code className="text-yellow-400">join</code>: <code className="text-pink-400">() =&gt; </code><code className="text-white">&#123; return </code><code className="text-emerald-400">"🚀 Let's code the future!"</code>; <code className="text-white">&#125;</code><br />
+            &nbsp;&nbsp;<code className="text-orange-400">name</code>: <code className="text-emerald-400">"We Write Code"</code>,<br />
+            &nbsp;&nbsp;<code className="text-orange-400">platform</code>: <code className="text-emerald-400">"Discord"</code>,<br />
+            &nbsp;&nbsp;<code className="text-orange-400">members</code>: <code className="text-emerald-400">"82.4K+"</code>,<br />
+            &nbsp;&nbsp;<code className="text-orange-400">mission</code>: <code className="text-emerald-400">"Code. Collaborate. Create."</code>,<br />
+            &nbsp;&nbsp;<code className="text-orange-400">join</code>: <code className="text-pink-400">() =&gt; </code><code className="text-white">&#123; return </code><code className="text-emerald-400">"🚀 Let's code the future!"</code>; <code className="text-white">&#125;</code><br />
             <code className="text-white">&#125;;</code>
           </pre>
         </div>

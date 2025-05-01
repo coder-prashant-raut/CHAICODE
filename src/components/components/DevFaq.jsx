@@ -18,7 +18,7 @@ const DevFaq = () => {
       <div className="w-full flex justify-center items-center mb-4">
       <h2 className="text-2xl md:text-4xl font-bold text-orange-400 flex items-center gap-2">
         &lt;<span className="text-green-400">FAQ'S</span> /&gt;
-        <span className="text-sm md:text-base text-gray-400 font-mono">By Developers!</span>
+        <span className="text-sm md:text-base text-gray-400 font-mono"> By Developers!</span>
       </h2>
       </div>
       
@@ -33,7 +33,7 @@ const DevFaq = () => {
               onClick={() => toggleFaq(index)}
               className="w-full flex justify-between items-center px-6 py-5 hover:bg-green-900/10 text-left"
             >
-              <span className="text-base md:text-lg break-words">{faq.question}</span>
+              <span className="text-base md:text-lg break-words text-orange-400/80">{faq.question}</span>
               {openIndex === index ? (
                 <ChevronUp size={20} />
               ) : (
@@ -43,7 +43,7 @@ const DevFaq = () => {
 
             {openIndex === index && (
               <div className="px-6 pb-6 text-green-300 animate-fade-in">
-                <div className="bg-[#000000] text-lime-400 p-5 rounded-lg text-base leading-relaxed border border-green-600 shadow-inner mt-2">
+                <div className="bg-[#000000] text-lime-400/80 p-5 rounded-lg text-base leading-relaxed border border-green-600/50 shadow-inner mt-2">
                   {faq.answer}
                 </div>
               </div>

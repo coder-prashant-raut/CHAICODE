@@ -15,7 +15,7 @@ const FreeAPIShowcase = () => {
       {/* Main Content */}
       <div className="relative z-20 max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-300">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-14 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-300 via-orange-600 to-orange-300">
            FreeAPI – Your Open Source API Powerhouse
         </h2>
 
@@ -26,7 +26,7 @@ const FreeAPIShowcase = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-white">
               Unlock Your Potential with Our API Hub
             </h3>
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-400 text-lg leading-relaxed font-sans">
               Practice API integration like a real-world dev! Whether you're building with React, Next.js, or Flutter, FreeAPI is your sandbox playground. ⚡
             </p>
 
@@ -58,7 +58,7 @@ const FreeAPIShowcase = () => {
             href="https://freeapi.hashnode.space/api-guide/apireference/getARandomQuote"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+            className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
           >
             📚 Explore FreeAPI Docs
           </a>
