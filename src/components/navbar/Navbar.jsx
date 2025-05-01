@@ -78,10 +78,10 @@ export default function Navbar() {
                   href={`#${item.id}`}
                   className={`flex items-center gap-1 transition-colors ${
                     activeSection === item.id
-                      ? "text-blue-600 font-semibold"
+                      ? "text-orange-600 font-semibold"
                       : scrolled
-                      ? "text-gray-700 hover:text-blue-500"
-                      : "text-white hover:text-blue-300"
+                      ? "text-gray-700 hover:text-orange-600"
+                      : "text-orange-100 hover:text-orange-300"
                   }`}
                 >
                   <Icon size={16} />

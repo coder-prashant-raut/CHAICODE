@@ -49,7 +49,7 @@ export default function SocialLoveSection() {
       <section className="relative max-w-7xl px-4 md:px-8 lg:px-16 py-20 bg-transparent text-white min-h-screen flex flex-col items-center">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4 font-mono">
+          <h2 className="text-4xl font-bold text-orange-400 mb-4 font-mono">
             <span className="text-[#00FFD1]">&lt;</span>SocialLove
             <span className="text-[#00FFD1]">/&gt;</span>
           </h2>
@@ -93,7 +93,7 @@ export default function SocialLoveSection() {
                 <div className="text-gray-200 mt-2 text-base">{post.content}</div>
 
                 {/* Icons */}
-                <div className="flex justify-between items-center text-gray-500 mt-4 text-sm">
+                <div className="flex justify-between items-center text-orange-100 mt-4 text-sm">
                   <span>💬 {post.comments}</span>
                   <span>🔁 {post.shares}</span>
                   <span>❤️ {post.likes}</span>

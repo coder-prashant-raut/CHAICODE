@@ -22,13 +22,13 @@ export default function YoutubeShowcase() {
   ];
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 bg-transparent text-white font-mono">
+    <section className="w-full py-20 px-4 sm:px-6 bg-transparent text-orange-400 font-mono">
       <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
         <h2 className="text-3xl sm:text-4xl font-extrabold">
           🔥 Best YouTube Channels to Learn Tech
         </h2>
         <div className="mt-2 w-24 h-1 mx-auto bg-orange-500 rounded-full" />
-        <p className="mt-4 text-gray-300 text-sm sm:text-base px-2">
+        <p className="mt-4 text-orange-200 text-sm sm:text-base px-2">
           Curated by learners, loved by developers – explore top coding channels that teach with clarity, passion, and real-world insights.
         </p>
       </div>

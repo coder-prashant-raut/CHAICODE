@@ -62,7 +62,7 @@ export default function KeyBenefits() {
       className="w-full min-h-screen text-white flex items-center justify-center px-4 md:px-10 py-16 relative"
     >
       <div className="relative w-full max-w-6xl flex flex-col items-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-orange-400 mb-12">
           Key Benefits
         </h2>
 
@@ -75,7 +75,7 @@ export default function KeyBenefits() {
               return (
                 <motion.div
                   key={index}
-                  className="absolute w-full md:w-[70%] h-full rounded-3xl bg-gradient-to-br from-black/70 to-zinc-900/80 backdrop-blur border border-yellow-500 shadow-2xl flex flex-col items-center justify-center px-6 py-8 text-center space-y-4"
+                  className="absolute w-full md:w-[70%] h-full rounded-3xl bg-gradient-to-br from-black/70 to-zinc-900/80 backdrop-blur border border-orange-500 shadow-2xl flex flex-col items-center justify-center px-6 py-8 text-center space-y-4"
                   animate={{
                     x: offset * 100 + "%",
                     scale: isActive ? 1 : 0.9,
@@ -104,7 +104,7 @@ export default function KeyBenefits() {
           {activeIndex > 0 && (
             <button
               onClick={() => changeCard(-1)}
-              className="absolute left-4 md:left-10 top-4/5 -translate-y-1/2 bg-yellow-500 text-black hover:bg-yellow-400 p-3 rounded-full shadow-lg transition z-20"
+              className="absolute left-4 md:left-10 top-4/5 -translate-y-1/2 bg-orange-500 text-black hover:bg-orange-400 p-3 rounded-full shadow-lg transition z-20"
             >
               <ArrowLeft size={24} />
             </button>
@@ -112,7 +112,7 @@ export default function KeyBenefits() {
           {activeIndex < benefits.length - 1 && (
             <button
               onClick={() => changeCard(1)}
-              className="absolute right-4 md:right-10 top-4/5 -translate-y-1/2 bg-yellow-500 text-black hover:bg-yellow-400 p-3 rounded-full shadow-lg transition z-20"
+              className="absolute right-4 md:right-10 top-4/5 -translate-y-1/2 bg-orange-500 text-black hover:bg-orange-400 p-3 rounded-full shadow-lg transition z-20"
             >
               <ArrowRight size={24} />
             </button>
@@ -121,7 +121,7 @@ export default function KeyBenefits() {
 
         {/* CTA Button at End */}
         <div className="mt-10">
-          <button className="cursor-pointer bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition text-lg shadow-md">
+          <button className="cursor-pointer bg-orange-500 text-black font-semibold px-6 py-3 rounded-full hover:bg-orange-400 transition text-lg shadow-md">
             Join Cohort
           </button>
         </div>

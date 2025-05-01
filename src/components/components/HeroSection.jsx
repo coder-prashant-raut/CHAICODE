@@ -99,18 +99,18 @@ const HeroSection = () => {
   </button>
 
   {/* 👑 Headings */}
-  <span className="mt-6 text-xl md:text-2xl border-b-2 border-amber-500/60 text-white/90">
+  <span className="mt-6 text-xl md:text-2xl border-b-2 border-amber-500/60 text-orange-100">
     Empower Your Coding Journey with
   </span>
 
-  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mt-4 text-white">
+  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mt-4 text-orange-100">
     <span className="text-orange-400 font-mono border-b-4 border-orange-400">Consistency</span>{" "}
     and{" "}
     <span className="text-orange-400 font-mono border-b-4 border-orange-400">Community</span>
   </h1>
 
   {/* 📖 Description */}
-  <p className="mt-6 text-white/80 text-base md:text-lg max-w-3xl leading-relaxed font-sans">
+  <p className="mt-6 text-orange-200 text-base md:text-lg max-w-3xl leading-relaxed font-sans">
     We’re not just another course. Join bounties, peer learning, code reviews, <br />
     virtual hostel vibes, alumni community, group projects & more. Let’s grow together 🚀
   </p>
@@ -120,7 +120,7 @@ const HeroSection = () => {
     {buttons.map((btn, idx) => (
       <button
         key={idx}
-        className="flex items-center gap-2 text-white/80 hover:text-white border border-orange-500 px-4 py-2 rounded-md shadow 
+        className="flex items-center gap-2 text-orange-100 hover:text-white border border-orange-500 px-4 py-2 rounded-md shadow 
                    hover:bg-orange-500 hover:-translate-y-1 hover:shadow-lg hover:scale-105 
                    transition-all duration-300 ease-in-out text-sm font-medium "
       >

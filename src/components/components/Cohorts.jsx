@@ -36,7 +36,7 @@ const Cohorts = () => {
   };
 
   return (
-    <div className="w-full bg-black text-white px-4 md:px-12 py-16 relative">
+    <div className="w-full bg-black text-orange-400 px-4 md:px-12 py-16 relative" aria-label="cohort section ">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
         🌀 Explore Our Top Courses
       </h1>

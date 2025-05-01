@@ -16,7 +16,18 @@ export default function AuthorUdemyShowcase() {
 
   return (
     <section className="w-full py-16 px-6 bg-transparent text-white">
+       
+           <div className='w-full flex flex-col justify-center items-center mb-4'>
+           <h3 className="text-2xl sm:text-3xl font-bold text-orange-400">
+             Top Udemy Courses
+            </h3>
+            <p className="text-gray-400 text-lg leading-relaxed font-sans">
+            Only web development course that you will need. Covers HTML, CSS, Tailwind, Node, React, MongoDB, Prisma, Deployment ⚡
+            </p>
+           </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+
         
         {/* Left - Course Image and Details */}
         <motion.div
