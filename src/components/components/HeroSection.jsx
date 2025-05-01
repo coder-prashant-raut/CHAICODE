@@ -104,9 +104,9 @@ const HeroSection = () => {
   </span>
 
   <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mt-4 text-white">
-    <span className="text-pink-400 font-mono border-b-4 border-yellow-400">Consistency</span>{" "}
+    <span className="text-orange-400 font-mono border-b-4 border-orange-400">Consistency</span>{" "}
     and{" "}
-    <span className="text-yellow-400 font-mono border-b-4 border-pink-400">Community</span>
+    <span className="text-orange-400 font-mono border-b-4 border-orange-400">Community</span>
   </h1>
 
   {/* 📖 Description */}
