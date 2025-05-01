@@ -91,7 +91,7 @@ export default function KeyBenefits() {
     onSwipedDown: () => {
       setActiveIndex((prev) => Math.max(prev - 1, 0));
     },
-    preventScrollOnSwipe: true,
+    preventScrollOnSwipe: false, // Allow scroll behavior for mobile as well
     trackTouch: true,
     trackMouse: false,
   });

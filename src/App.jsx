@@ -43,7 +43,8 @@ function App() {
                 <SocialLoveSection />
               </div>
 
-              <YoutubeShowcase />
+              <StudentsCompanyShowcase />
+
 
               <div id="cohort">
                 <Cohorts />
@@ -55,13 +56,15 @@ function App() {
              
               <KeyBenefits />
 
-              <StudentsCompanyShowcase />
 
               <CloudTopics />
 
               <Alumni />
               <MobileRevealSection />
               <CommunitySection />
+
+              <YoutubeShowcase />
+
 
               <div id="docs">
                 <FreeAPIShowcase />
