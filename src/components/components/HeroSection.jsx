@@ -78,7 +78,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative rounded-2xl flex flex-col items-center justify-center px-6 py-10 md:py-eg5 text-white text-center overflow-hidden bg-transparent"
+      className="relative rounded-2xl flex flex-col items-center justify-center px-6 py-5 md:py-5 text-white text-center overflow-hidden bg-transparent"
       // style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}
     >
 

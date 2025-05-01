@@ -17,19 +17,26 @@ export default function KeyBenefits() {
     });
   };
 
-  // Horizontal scroll support (desktop)
   useEffect(() => {
+    let isScrolling = false;
+  
     const handleWheel = (e) => {
       if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
         e.preventDefault();
+        if (isScrolling) return;
+        isScrolling = true;
         changeCard(e.deltaX > 0 ? 1 : -1);
+        setTimeout(() => {
+          isScrolling = false;
+        }, 600); // adjust time based on transition speed
       }
     };
-
+  
     const node = containerRef.current;
     node?.addEventListener("wheel", handleWheel, { passive: false });
     return () => node?.removeEventListener("wheel", handleWheel);
   }, []);
+  
 
   // Arrow key support
   useEffect(() => {
@@ -52,7 +59,7 @@ export default function KeyBenefits() {
     <section
       {...(isMobile ? swipeHandlers : {})}
       ref={containerRef}
-      className="w-full min-h-screen bg-zinc-950 text-white flex items-center justify-center px-4 md:px-10 py-16 relative"
+      className="w-full min-h-screen text-white flex items-center justify-center px-4 md:px-10 py-16 relative"
     >
       <div className="relative w-full max-w-6xl flex flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-12">
@@ -89,6 +96,10 @@ export default function KeyBenefits() {
             })}
           </AnimatePresence>
 
+          {/* Gradient overlays on left and right sides */}
+          <div className="absolute left-0 top-0 bottom-0 w-36 bg-gradient-to-r from-black/60 to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-36 bg-gradient-to-l from-black/60 to-transparent z-10"></div>
+
           {/* Beautiful Buttons */}
           {activeIndex > 0 && (
             <button
@@ -101,8 +112,7 @@ export default function KeyBenefits() {
           {activeIndex < benefits.length - 1 && (
             <button
               onClick={() => changeCard(1)}
-              className="absolute right-4 md:right-10 top-4/5
-               -translate-y-1/2 bg-yellow-500 text-black hover:bg-yellow-400 p-3 rounded-full shadow-lg transition z-20"
+              className="absolute right-4 md:right-10 top-4/5 -translate-y-1/2 bg-yellow-500 text-black hover:bg-yellow-400 p-3 rounded-full shadow-lg transition z-20"
             >
               <ArrowRight size={24} />
             </button>
@@ -110,13 +120,11 @@ export default function KeyBenefits() {
         </div>
 
         {/* CTA Button at End */}
-        
-          <div className="mt-10">
-            <button className="bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition text-lg shadow-md">
-              Join Cohort
-            </button>
-          </div>
-      
+        <div className="mt-10">
+          <button className="cursor-pointer bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition text-lg shadow-md">
+            Join Cohort
+          </button>
+        </div>
       </div>
     </section>
   );
