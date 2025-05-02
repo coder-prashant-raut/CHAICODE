@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaRocket, FaCopy } from "react-icons/fa"; // CTA Icon & Copy Icon
+import {  FaCopy , FaLaptopCode } from "react-icons/fa"; // CTA Icon & Copy Icon
 import { CheckCircle } from "react-feather"; // Or any other icon from react-icons/react-feather
 import { LuUsers, LuCode, LuBadgeDollarSign } from 'react-icons/lu';
 import { HiOutlineQuestionMarkCircle ,HiOutlineHome} from 'react-icons/hi2'; // Heroicons for help
-
 const buttons = [
   { label: 'Peer Learning', icon: <LuUsers /> },
   { label: 'Code Reviews', icon: <LuCode /> },
@@ -118,7 +117,7 @@ const HeroSection = () => {
         aria-label="Short description of the platform"
       >
         We’re not just another course. Join bounties, peer learning, code reviews, <br />
-        virtual hostel vibes, alumni community, group projects & more. Let’s grow together 🚀
+        virtual hostel vibes, alumni community, group projects & more. Let’s grow together 
       </p>
   
       <nav className="flex flex-wrap gap-4 justify-center mt-8" aria-label="Primary hero action buttons">
@@ -136,24 +135,25 @@ const HeroSection = () => {
         ))}
       </nav>
   
-      <div className="relative mt-10 font-sans">
-        <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 animate-spin-slow z-0 blur-sm" />
   
-        <button
-          onClick={() => window.location.href = "#cohort"}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="relative z-10 flex items-center gap-3 px-8 py-3 bg-black rounded-full text-green-300 font-semibold text-sm sm:text-base 
-                     border-2 border-orange-500 shadow-lg hover:shadow-orange-300/40 transition-all duration-300 overflow-hidden"
-          aria-label="Check all live cohorts"
-        >
-          <FaRocket className="text-orange-500 animate-pulse" />
-          <span className="flex items-center gap-2">
-            Check All <span className="text-orange-400 font-bold">Live</span> Cohorts
-            <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" aria-hidden="true"></span>
-          </span>
-        </button>
-      </div>
+<div className="relative mt-10 font-sans">
+  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 animate-spin-slow z-0 blur-sm" />
+  
+  <button
+    onClick={() => window.location.href = "#cohort"}
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
+    className="relative z-10 flex items-center gap-3 px-8 py-3 bg-black rounded-full text-green-300 font-semibold text-sm sm:text-base 
+               border-2 border-orange-500 shadow-lg hover:shadow-orange-300/40 hover:scale-105 transition-all duration-300 overflow-hidden"
+    aria-label="Check all live cohorts"
+  >
+    <FaLaptopCode className="text-orange-400 text-lg animate-pulse" />
+    <span className="flex items-center gap-2">
+      Check All <span className="text-orange-400 font-bold">Live</span> Cohorts
+      <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" aria-hidden="true"></span>
+    </span>
+  </button>
+</div>
     </header>
   
     <section
