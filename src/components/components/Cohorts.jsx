@@ -36,48 +36,52 @@ const Cohorts = () => {
   };
 
   return (
-    <div className="w-full bg-black text-orange-400 px-4 md:px-12 py-16 relative" aria-label="cohort section ">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        🌀 Explore Our Top Courses
-      </h1>
-
-      <div className="relative">
-        {/* Gradients */}
-        <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
-
-        {/* Scroll Arrows */}
-        {showLeft && (
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-400 text-black p-2 md:p-3 rounded-full shadow-md"
-          >
-            <FaArrowLeft />
-          </button>
-        )}
-        {showRight && (
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-400 text-black p-2 md:p-3 rounded-full shadow-md"
-          >
-            <FaArrowRight />
-          </button>
-        )}
-
-        {/* Cards Scroll Row */}
-        <div
-  ref={scrollRef}
-  className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide gap-6 px-2 pb-2"
->
-  {courses.map((course) => (
-    <div key={course.id} className="snap-start flex-shrink-0">
-      <Card {...course} />
-    </div>
-  ))}
-</div>
-
+    <div className="w-full bg-black text-orange-400 px-4 md:px-12 py-16 relative" aria-labelledby="cohort-section-heading">
+    <h1 id="cohort-section-heading" className="text-3xl md:text-4xl font-bold text-center mb-12">
+      🌀 Explore Our Top Courses
+    </h1>
+  
+    <div className="relative" aria-label="Cohort course carousel">
+      {/* Gradients */}
+      <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+  
+      {/* Scroll Arrows */}
+      {showLeft && (
+        <button
+          onClick={() => scroll("left")}
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-400 text-black p-2 md:p-3 rounded-full shadow-md"
+          aria-label="Scroll left to explore previous courses"
+        >
+          <FaArrowLeft />
+        </button>
+      )}
+      {showRight && (
+        <button
+          onClick={() => scroll("right")}
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-400 text-black p-2 md:p-3 rounded-full shadow-md"
+          aria-label="Scroll right to explore more courses"
+        >
+          <FaArrowRight />
+        </button>
+      )}
+  
+      {/* Cards Scroll Row */}
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide gap-6 px-2 pb-2"
+        role="region" // Defines this section as a region for screen readers
+        aria-label="Course carousel" // Provides context to users about the section
+      >
+        {courses.map((course) => (
+          <div key={course.id} className="snap-start flex-shrink-0" aria-labelledby={`course-${course.id}`}>
+            <Card {...course} aria-labelledby={`course-${course.id}`} />
+          </div>
+        ))}
       </div>
     </div>
+  </div>
+  
   );
 };
 
