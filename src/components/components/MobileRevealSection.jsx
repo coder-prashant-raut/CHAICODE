@@ -188,9 +188,9 @@ export default function MobileRevealSection() {
                 className="flex justify-center gap-4 text-xl text-white"
                 aria-label="Social links for Hitesh Choudhary"
               >
-                <a href="#" aria-label="Hitesh on LinkedIn"><FaLinkedin /></a>
-                <a href="#" aria-label="Hitesh on Twitter"><FaTwitter /></a>
-                <a href="#" aria-label="Hitesh on YouTube"><FaYoutube /></a>
+                <a href="https://www.linkedin.com/in/hiteshchoudhary/" aria-label="Hitesh on LinkedIn" className="hover:text-orange-400"><FaLinkedin /></a>
+                <a href="https://x.com/Hiteshdotcom" aria-label="Hitesh on Twitter"><FaTwitter className="hover:text-orange-400"/></a>
+                <a href="https://www.youtube.com/hiteshchoudharydotcom" aria-label="Hitesh on YouTube" className="hover:text-orange-400"><FaYoutube /></a>
               </nav>
             </div>
           </motion.article>
