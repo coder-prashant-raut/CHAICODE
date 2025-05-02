@@ -56,7 +56,7 @@ export default function Navbar() {
           aria-label="Main navigation"
           className={`fixed top-0 left-0 right-0 z-100 transition-all duration-400 ease-in-out backdrop-blur-md px-3
             ${scrolled
-              ? "bg-white/80 text-black shadow-xl border-b border-gray-200 rounded-xl mt-4 mx-4 md:mx-40 max-w-full py-0"
+              ? "bg-white/60 text-black shadow-xl border-b border-gray-200 rounded-xl mt-4 mx-4 md:mx-40 max-w-full py-0"
               : "bg-gradient-to-b from-slate-950 via-slate-90 rounded-none border-white/10 mt-0 mx-0 max-w-full py-2"
             } overflow-x-hidden`}
         >
@@ -79,7 +79,7 @@ export default function Navbar() {
                         activeSection === item.id
                           ? "text-orange-600 font-semibold"
                           : scrolled
-                          ? "text-gray-700 hover:text-orange-600"
+                          ? "text-gray-900 hover:text-orange-600"
                           : "text-orange-100 hover:text-orange-300"
                       }`}
                     >
