@@ -39,7 +39,7 @@ export default function AuthorUdemyShowcase() {
           <img
             src={course.image}
             alt="Course"
-            className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"
+            className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-102"
           />
         </motion.div>
 

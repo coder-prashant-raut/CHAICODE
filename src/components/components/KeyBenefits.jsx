@@ -86,9 +86,9 @@ export default function KeyBenefits() {
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ type: "spring", stiffness: 200, damping: 25 }}
                 >
-                  <div className="text-5xl text-yellow-400">{benefit.icon}</div>
-                  <h3 className="text-2xl md:text-3xl font-semibold">{benefit.title}</h3>
-                  <p className="text-gray-300 text-sm md:text-lg max-w-xl">
+                  <div className="text-5xl">{benefit.icon}</div>
+                  <h3 className="text-2xl md:text-3xl font-semibold text-orange-200">{benefit.title}</h3>
+                  <p className="text-orange-50 text-sm md:text-lg max-w-xl">
                     {benefit.description}
                   </p>
                 </motion.div>

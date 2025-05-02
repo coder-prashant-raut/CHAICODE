@@ -100,7 +100,7 @@ export default function MobileRevealSection() {
         {/* Heading */}
         <div className="relative z-10 pb-14 max-w-4xl mx-auto text-center">
         <motion.h2
-  className="text-4xl md:text-5xl font-mono font-bold tracking-wide mb-6 py-3 px-4 rounded-xl bg-gradient-to-r from-[#ff4d4d] via-[#fca311] to-[#4cc9f0] bg-clip-text text-transparent shadow-sm"
+  className="text-4xl md:text-5xl font-sans font-bold tracking-wide mb-6 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-400 via-orange-300 to-orange-700 bg-clip-text text-transparent shadow-sm"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
@@ -110,7 +110,7 @@ export default function MobileRevealSection() {
 
 
           <motion.p
-            className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-orange-200 max-w-xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
