@@ -1,16 +1,20 @@
 import React from "react";
-
 const codeSnippets = [
-  `// TODO: Fix it later 😅`,
-  `const chai = "life booster";`,
-  `throw new Error("It worked on my machine");`,
-  `// Why is this bug smiling at me? 🐛`,
-  `useEffect(() => {}, [Tea🍵])`,
-  `<CodeIsPoetry />`,
-  `// Debugging: The art of removing bugs you didn't know you had`,
-  `while (!success) tryAgain();`,
-  `// Pro Tip: Don't deploy on Fridays 😬`,
-  `const motivation = () => "Just 5 more minutes of coding"`,
+  `// Productivity level: 404 Not Found`,
+  `git commit -m "final-final-FINAL.js"`,
+  `const debug = true; // until it's not`,
+  `if (coffee === empty) return chaos;`,
+  `// Feature or bug? Let the users decide.`,
+  `const sleep = () => new Promise(() => {});`,
+  `// Note to self: Understand this later`,
+  `rm -rf /pain`,
+  `function estimateDeadline() { return "maybe"; }`,
+  `// Code now, cry in production later`,
+  `const weekend = deploy ? null : "freedom";`,
+  `while (alive) code();`,
+  `try { code() } catch(e) { blameBackend(); }`,
+  `const fixBug = () => console.log("Works for me");`,
+  `// When StackOverflow is down, I am too.`,
 ];
 
 export default function CodeBackground() {
