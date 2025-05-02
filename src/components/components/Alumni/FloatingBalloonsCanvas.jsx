@@ -5,16 +5,16 @@ const CANVAS_WIDTH = 500;
 const CANVAS_HEIGHT = 250;
 
 const people = [
-  { name: "Aarav Shah", job: "Frontend Dev", company: "ChaiCode" },
-  { name: "Meera Patel", job: "UI/UX Designer", company: "PixelWhiz" },
-  { name: "Rohan Singh", job: "Backend Dev", company: "APIWorks" },
-  { name: "Nisha Rao", job: "Product Manager", company: "DreamSprint" },
-  { name: "Kabir Khan", job: "ML Engineer", company: "NeuroNet" },
-  { name: "Ananya Verma", job: "Fullstack Dev", company: "CodeCraft" },
-  { name: "Ishaan Roy", job: "DevOps Engg", company: "InfraMint" },
-  { name: "Sanya Jain", job: "QA Analyst", company: "BugSmiths" },
-  { name: "Arjun Desai", job: "CTO", company: "TechTonic" },
-  { name: "Priya Nair", job: "Data Scientist", company: "AlgoWave" },
+  { name: "Prashant Raut", job: "CTO", company: "BramhaUI", image: "https://avatars.githubusercontent.com/u/162595999?v=4" },
+  { name: "Aaravi Shah", job: "UI/UX Designer", company: "ChaiCode", image: "https://i.pravatar.cc/150?img=21" },
+  { name: "Meera Patel", job: "Backend Dev", company: "PixelWhiz", image: "https://i.pravatar.cc/150?img=31" },
+  { name: "Rashmi Singh", job: "Data Scientist", company: "NeuroNet", image: "https://i.pravatar.cc/150?img=41" },
+  { name: "Kabir Khan", job: "ML Engineer", company: "CodeCraft", image: "https://i.pravatar.cc/150?img=5" },
+  { name: "Anant Verma", job: "Fullstack Dev", company: "TechTonic", image: "https://i.pravatar.cc/150?img=6" },
+  { name: "Ishaan Roy", job: "DevOps Engineer", company: "InfraMint", image: "https://i.pravatar.cc/150?img=7" },
+  { name: "Arav Jain", job: "Product Manager", company: "BugSmiths", image: "https://i.pravatar.cc/150?img=8" },
+  { name: "Sanya Desai", job: "QA Analyst", company: "AlgoWave", image: "https://i.pravatar.cc/150?img=9" },
+  { name: "Priya Nair", job: "CTO", company: "DreamSprint", image: "https://i.pravatar.cc/150?img=10" },
 ];
 
 const getRandom = (min, max) => Math.random() * (max - min) + min;
@@ -39,7 +39,7 @@ export default function FloatingBalloonsCanvas() {
     }));
 
     balloonList.forEach((b, i) => {
-      b.img.src = `https://i.pravatar.cc/150?img=${i + 1}`;
+      b.img.src = b.info.image;  // Use individual image URLs here
     });
 
     setBalloons(balloonList);
