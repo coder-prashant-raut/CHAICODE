@@ -39,7 +39,7 @@ export default function AppDownloadSection() {
             className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-md backdrop-blur"
             aria-label="Offline Access"
           >
-            <MdWifiOff size={28} className="text-cyan-400 mb-2" />
+            <MdWifiOff size={28} className="text-orange-400 mb-2" />
             <p className="font-semibold">Offline Access</p>
             <p className="text-gray-400 text-xs mt-1">Download and study without internet.</p>
           </motion.div>
@@ -51,7 +51,7 @@ export default function AppDownloadSection() {
             className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-md backdrop-blur"
             aria-label="Live Session Alerts"
           >
-            <MdNotificationsActive size={28} className="text-cyan-400 mb-2" />
+            <MdNotificationsActive size={28} className="text-orange-400 mb-2" />
             <p className="font-semibold">Live Session Alerts</p>
             <p className="text-gray-400 text-xs mt-1">Never miss a live class again.</p>
           </motion.div>
@@ -63,7 +63,7 @@ export default function AppDownloadSection() {
             className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-md backdrop-blur"
             aria-label="Revise on Commute"
           >
-            <MdDirectionsBus size={28} className="text-cyan-400 mb-2" />
+            <MdDirectionsBus size={28} className="text-orange-400 mb-2" />
             <p className="font-semibold">Revise on Commute</p>
             <p className="text-gray-400 text-xs mt-1">Perfect for travel and downtime.</p>
           </motion.div>
@@ -79,7 +79,7 @@ export default function AppDownloadSection() {
           <div className="flex flex-col gap-4 sm:ml-4">
             <a
               href="#"
-              className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-xl shadow-md hover:scale-105 transition transform"
+              className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-orange-400  to-yellow-600 text-white rounded-xl shadow-md hover:scale-105 transition transform"
               aria-label="Get the app on Google Play"
             >
               <FaGooglePlay size={28} />
@@ -91,7 +91,7 @@ export default function AppDownloadSection() {
   
             <a
               href="#"
-              className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-slate-800 to-gray-900 text-white border border-white/10 rounded-xl shadow-md hover:scale-105 transition transform"
+              className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-slate-800 to-gray-900 text-white border border-orange-100/30 rounded-xl shadow-md hover:scale-105 transition transform"
               aria-label="Download the app from the App Store"
             >
               <FaApple size={28} />
@@ -120,7 +120,7 @@ export default function AppDownloadSection() {
     </div>
   
     {/* Floating Glows */}
-    <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none animate-pulse" role="presentation" aria-hidden="true"></div>
+    <div className="absolute top-10 right-5 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none animate-pulse" role="presentation" aria-hidden="true"></div>
     <div className="absolute bottom-10 left-10 w-60 h-60 bg-blue-500/20 rounded-full blur-2xl pointer-events-none animate-pulse" role="presentation" aria-hidden="true"></div>
   </section>
   
