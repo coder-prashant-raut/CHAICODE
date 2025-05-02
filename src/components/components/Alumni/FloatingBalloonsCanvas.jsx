@@ -147,7 +147,7 @@ export default function FloatingBalloonsCanvas() {
 
       {hovered && (
         <div
-          className="absolute z-50 bg-gray-800/80 text-white border-2 border-orange-400 shadow-2xl p-3 rounded-xl text-sm w-56 backdrop-blur-md transition-all duration-150 ease-out"
+          className="absolute z-50 bg-gray-800/80 text-white border-2 border-orange-400 shadow-2xl p-3 rounded-xl text-sm w-56 backdrop-blur-md transition-all duration-150 ease-out "
           style={{
             top: hovered.y,
             left: hovered.x,

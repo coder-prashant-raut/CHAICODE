@@ -15,10 +15,10 @@ export default function Alumni
     aria-hidden="true"
     className="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] h-[600px] z-0 pointer-events-none"
   />
-  <div
+  {/* <div
     aria-hidden="true"
-    className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] h-[600px] bg-blue-500/20 blur-[120px] z-0 pointer-events-none"
-  />
+    className="absolute top-1/2 right-130 -translate-y-1/2 w-[300px] h-[300px] bg-blue-500/20 blur-[120px] z-0 pointer-events-none"
+  /> */}
   <div
     aria-hidden="true"
     className="absolute -top-[300px] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-radial from-black via-gray-800 to-transparent opacity-30 blur-[200px] pointer-events-none z-0"
@@ -28,7 +28,7 @@ export default function Alumni
   <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-center md:items-stretch">
     {/* Left Column: Balloons Canvas */}
     <div
-      className="w-full md:w-1/2 backdrop-blur-md bg-green-600/5 shadow-2xl rounded-2xl flex items-center justify-center min-h-[250px] overflow-hidden"
+      className="w-full md:w-1/2 backdrop-blur-md  shadow-2xl rounded-2xl flex items-center justify-center min-h-[250px] overflow-hidden"
       role="presentation"
       aria-hidden="true"
     >
@@ -46,7 +46,7 @@ export default function Alumni
         className="text-2xl md:text-4xl font-bold text-orange-400 mb-4 flex items-center flex-wrap gap-2 justify-center md:justify-start"
       >
         Meet the <br />
-        <code className="px-3 py-1 bg-gray-900 text-green-400 font-mono text-xl md:text-2xl">
+        <code className="px-3 py-1 bg-gray-900 text-orange-400 font-mono text-xl md:text-2xl">
           <span className="text-green-400 text-xl">&lt;</span>
           Code Crafters
           <span className="text-green-400 text-xl">/&gt;</span>
