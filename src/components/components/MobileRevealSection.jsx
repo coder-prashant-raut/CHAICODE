@@ -93,96 +93,124 @@ export default function MobileRevealSection() {
 
   return (
     <div ref={ref} className="overflow-hidden px-4 py-16 md:py-20 font-mono">
-      <section className="relative px-6 py-24 text-white overflow-hidden">
-        {/* Background Glow */}
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-600/20 blur-[200px] rounded-full z-0" />
-
-        {/* Heading */}
-        <div className="relative z-10 pb-14 max-w-4xl mx-auto text-center">
+    <section
+      className="relative px-6 py-24 text-white overflow-hidden"
+      aria-labelledby="why-chaicode-heading"
+    >
+      {/* Background Glow */}
+      <div
+        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-600/20 blur-[200px] rounded-full z-0"
+        aria-hidden="true"
+      />
+  
+      {/* Heading */}
+      <header className="relative z-10 pb-14 max-w-4xl mx-auto text-center">
         <motion.h2
-  className="text-4xl md:text-5xl font-sans font-bold tracking-wide mb-6 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-400 via-orange-300 to-orange-700 bg-clip-text text-transparent shadow-sm"
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-  Why ChaiCode?
-</motion.h2>
-
-
-          <motion.p
-            className="text-lg md:text-xl text-orange-200 max-w-xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            Because code is better with a cup of chai. We blend{" "}
-            <span className="text-white font-semibold">deep tech insights</span> with{" "}
-            <span className="text-white font-semibold">heartfelt teaching</span> — making learning not just smarter, but warmer.
-          </motion.p>
-        </div>
-
-        {/* Ternary-based layout */}
-        {isMobile ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto relative z-10">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-[#1a1a1d] p-4 rounded-xl border border-gray-700 text-white hover:border-orange-500 hover:shadow-[0_0_12px_rgba(255,115,0,0.5)] transition-all duration-300"
-              >
-                <h3 className="font-semibold text-orange-400 mb-1 text-base">{feature.heading}</h3>
-                <p className="text-sm text-gray-300">{feature.text}</p>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="hidden md:flex items-center justify-center relative w-full max-w-[1200px] h-[100vh] md:h-[70vh] mx-auto">
-            {/* Center Card */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-              w-[360px] md:w-[300px] h-auto bg-[#18181c] text-white rounded-[2rem] 
-              shadow-2xl border border-gray-700 transition-all duration-300 z-50 text-center"
+          id="why-chaicode-heading"
+          className="text-4xl md:text-5xl font-sans font-bold tracking-wide mb-6 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-400 via-orange-300 to-orange-700 bg-clip-text text-transparent shadow-sm"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Why ChaiCode?
+        </motion.h2>
+  
+        <motion.p
+          className="text-lg md:text-xl text-orange-200 max-w-xl mx-auto leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          Because code is better with a cup of chai. We blend{" "}
+          <strong className="text-white font-semibold">deep tech insights</strong> with{" "}
+          <strong className="text-white font-semibold">heartfelt teaching</strong> —
+          making learning not just smarter, but warmer.
+        </motion.p>
+      </header>
+  
+      {/* Feature Cards (Mobile) */}
+      {isMobile ? (
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto relative z-10"
+          role="list"
+          aria-label="Key Features"
+        >
+          {features.map((feature, index) => (
+            <article
+              key={index}
+              className="bg-[#1a1a1d] p-4 rounded-xl border border-gray-700 text-white hover:border-orange-500 hover:shadow-[0_0_12px_rgba(255,115,0,0.5)] transition-all duration-300"
+              role="listitem"
             >
-              <div className="rounded-lg overflow-hidden py-4 px-2">
-                <img
-                  src="https://imgs.search.brave.com/xfQk9p07Ug4i_ot-mQ5IlXEhW2VRXUZcbJbUN5BEHMs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS9k/MWQ1NjMxYWVjNzMu/anBn"
-                  alt="Hitesh Choudhary"
-                  className="w-full h-48 object-cover shadow-md rounded-xl"
-                />
-              </div>
-              <div className="px-6 py-6">
-                <h2 className="text-2xl font-bold mb-2 text-orange-600 border-b-2 border-amber-300">Hitesh Choudhary</h2>
-                <p className="text-sm text-gray-300 mb-3 leading-relaxed">
-                  Retired from corporate, now a full-time YouTuber. Ex-founder of LCO (acquired), ex-CTO, and Sr. Director at PW. Runs 2 YouTube channels (950k & 470k). Travelled across 43 countries.
-                </p>
-                <h3 className="text-lg font-semibold mt-4 text-white">Approach</h3>
-                <p className="text-sm text-gray-300 mb-4">
-                  Project-based courses with peer learning, bounties, and engaging activities.
-                </p>
-                <div className="flex justify-center gap-4 text-xl text-white">
-                  <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-                  <a href="#" aria-label="Twitter"><FaTwitter /></a>
-                  <a href="#" aria-label="YouTube"><FaYoutube /></a>
-                </div>
-              </div>
-            </motion.div>
-
-            <AnimatePresence>
-              <>
-                {/* Left Cards */}
-                <SideCard xOffset={-1} delay={0.1} top={150} {...features[0]} />
-                <SideCard xOffset={-1} delay={0.2} top={310} {...features[1]} />
-                <SideCard xOffset={-1} delay={0.3} top={470} {...features[2]} />
-
-                {/* Right Cards */}
-                <SideCard xOffset={1} delay={0.1} top={150} {...features[3]} />
-                <SideCard xOffset={1} delay={0.2} top={310} {...features[4]} />
-                <SideCard xOffset={1} delay={0.3} top={470} {...features[5]} />
-              </>
-            </AnimatePresence>
-          </div>
-        )}
-      </section>
-    </div>
+              <h3 className="font-semibold text-orange-400 mb-1 text-base">
+                {feature.heading}
+              </h3>
+              <p className="text-sm text-gray-300">{feature.text}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        // Desktop layout with central profile
+        <div
+          className="hidden md:flex items-center justify-center relative w-full max-w-[1200px] h-[100vh] md:h-[70vh] mx-auto"
+          role="region"
+          aria-label="Hitesh Choudhary and features"
+        >
+          {/* Center Card */}
+          <motion.article
+            whileHover={{ scale: 1.02 }}
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-[360px] md:w-[300px] h-auto bg-[#18181c] text-white rounded-[2rem] 
+                shadow-2xl border border-gray-700 transition-all duration-300 z-50 text-center"
+            aria-label="Hitesh Choudhary profile"
+          >
+            <div className="rounded-lg overflow-hidden py-4 px-2">
+              <img
+                src="https://imgs.search.brave.com/xfQk9p07Ug4i_ot-mQ5IlXEhW2VRXUZcbJbUN5BEHMs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS9k/MWQ1NjMxYWVjNzMu/anBn"
+                alt="Profile photo of Hitesh Choudhary"
+                className="w-full h-48 object-cover shadow-md rounded-xl"
+                role="img"
+              />
+            </div>
+            <div className="px-6 py-6">
+              <h2 className="text-2xl font-bold mb-2 text-orange-600 border-b-2 border-amber-300">
+                Hitesh Choudhary
+              </h2>
+              <p className="text-sm text-gray-300 mb-3 leading-relaxed">
+                Retired from corporate, now a full-time YouTuber. Ex-founder of LCO (acquired),
+                ex-CTO, and Sr. Director at PW. Runs 2 YouTube channels (950k & 470k). Travelled
+                across 43 countries.
+              </p>
+              <h3 className="text-lg font-semibold mt-4 text-white">Approach</h3>
+              <p className="text-sm text-gray-300 mb-4">
+                Project-based courses with peer learning, bounties, and engaging activities.
+              </p>
+              <nav
+                className="flex justify-center gap-4 text-xl text-white"
+                aria-label="Social links for Hitesh Choudhary"
+              >
+                <a href="#" aria-label="Hitesh on LinkedIn"><FaLinkedin /></a>
+                <a href="#" aria-label="Hitesh on Twitter"><FaTwitter /></a>
+                <a href="#" aria-label="Hitesh on YouTube"><FaYoutube /></a>
+              </nav>
+            </div>
+          </motion.article>
+  
+          {/* Side Cards (Animated) */}
+          <AnimatePresence>
+            <>
+              <SideCard xOffset={-1} delay={0.1} top={150} {...features[0]} />
+              <SideCard xOffset={-1} delay={0.2} top={310} {...features[1]} />
+              <SideCard xOffset={-1} delay={0.3} top={470} {...features[2]} />
+  
+              <SideCard xOffset={1} delay={0.1} top={150} {...features[3]} />
+              <SideCard xOffset={1} delay={0.2} top={310} {...features[4]} />
+              <SideCard xOffset={1} delay={0.3} top={470} {...features[5]} />
+            </>
+          </AnimatePresence>
+        </div>
+      )}
+    </section>
+  </div>
+  
   );
 }
