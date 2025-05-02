@@ -16,92 +16,83 @@ export default function AuthorUdemyShowcase() {
 
   return (
     <section className="w-full py-16 px-6 bg-transparent text-white" aria-labelledby="udemy-courses">
-  <div className='w-full flex flex-col justify-center items-center mb-4'>
-    <h3 id="udemy-courses" className="text-2xl sm:text-3xl font-bold text-orange-400">
-      Top Udemy Courses
-    </h3>
-    <p className="text-gray-400 text-lg leading-relaxed font-sans">
-      Only web development course that you will need. Covers HTML, CSS, Tailwind, Node, React, MongoDB, Prisma, Deployment ⚡
-    </p>
-  </div>
-
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    {/* Left - Course Image and Details */}
-    <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="relative w-full h-96 bg-gray-900 rounded-xl shadow-xl overflow-hidden"
-      aria-labelledby="course-image"
-    >
-      <img
-        src={course.image}
-        alt={`Image for ${course.title} course`}
-        className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-102"
-        aria-describedby="course-description"
-      />
-    </motion.div>
-
-    {/* Right - Course Details */}
-    <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="flex flex-col space-y-6"
-    >
-      {/* Heading Section */}
-      <h2 id="featured-course" className="text-4xl font-bold pb-4 text-orange-400 relative inline-block">
-        Featured Course: <span className="text-white">{course.title}</span>
-        <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-400 transform scale-x-100"></span>
-      </h2>
-
-      <p id="course-description" className="text-lg text-gray-300">{course.description}</p>
-
-      <div className="flex flex-col space-y-4">
-        <div className="flex items-center space-x-4">
-          <div className="flex space-x-1 text-yellow-400">
-            {[...Array(5)].map((_, index) => (
+    <div className="w-full flex flex-col justify-center items-center mb-10 text-center">
+      <h3 id="udemy-courses" className="text-3xl sm:text-4xl font-bold text-orange-400 mb-2">
+        Top Udemy Courses
+      </h3>
+      <p className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-3xl font-sans">
+        The only web development course you’ll ever need — covers HTML, CSS, Tailwind, Node, React, MongoDB, Prisma & Deployment ⚡
+      </p>
+    </div>
+  
+    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Left - Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="relative w-full h-60 sm:h-80 md:h-96 bg-gray-900 rounded-xl shadow-2xl overflow-hidden"
+        aria-labelledby="course-image"
+      >
+        <img
+          src={course.image}
+          alt={`Image for ${course.title} course`}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        />
+      </motion.div>
+  
+      {/* Right - Details */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-col space-y-6"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold text-orange-400">
+          Featured Course: <span className="text-white">{course.title}</span>
+        </h2>
+  
+        <p className="text-base sm:text-lg text-gray-300 leading-relaxed">{course.description}</p>
+  
+        {/* Rating & Students */}
+        <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-1 text-yellow-400">
+            {[...Array(5)].map((_, i) => (
               <svg
-                key={index}
-                className={`h-6 w-6 ${index < course.rating ? 'fill-current' : 'text-gray-400'}`}
-                xmlns="http://www.w3.org/2000/svg"
+                key={i}
+                className={`h-5 w-5 ${i < course.rating ? 'fill-current' : 'text-gray-500'}`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                aria-label={`Rating Star ${index + 1}`}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M10 15l-5.89 3.09 1.12-6.48-4.73-4.62 6.56-.57L10 1l2.94 5.47 6.56.57-4.73 4.62 1.12 6.48L10 15z"
-                  clipRule="evenodd"
-                />
+                <path d="M10 15l-5.89 3.09 1.12-6.48-4.73-4.62 6.56-.57L10 1l2.94 5.47 6.56.57-4.73 4.62 1.12 6.48L10 15z" />
               </svg>
             ))}
           </div>
           <span className="text-sm text-gray-400">({course.rating} stars)</span>
+          <span className="text-sm text-gray-400">• {course.numOfStudents} students</span>
         </div>
-
-        <div className="flex items-center space-x-6">
-          <span className="text-xl text-gray-200 font-semibold">Enrolled: {course.numOfStudents} students</span>
-          <div className="text-lg text-orange-400 font-bold">Was: <span className="line-through">{course.price}</span></div>
-          <div className="text-2xl text-green-400 font-bold">{course.discountedPrice}</div>
+  
+        {/* Price Info */}
+        <div className="flex flex-wrap items-center gap-6">
+          <span className="text-lg sm:text-xl text-orange-400 font-semibold">
+            Was: <span className="line-through">{course.price}</span>
+          </span>
+          <span className="text-2xl text-green-400 font-bold">{course.discountedPrice}</span>
         </div>
-
-        <div className="flex justify-start">
-          <a
-            href={course.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-orange-500 hover:bg-orange-400 transition duration-300 text-white text-lg py-3 px-8 rounded-md flex items-center space-x-2"
-            aria-label={`Enroll in ${course.title} course`}
-          >
-            <span>Enroll Now</span>
-            <FaArrowRight />
-          </a>
-        </div>
-      </div>
-    </motion.div>
-  </div>
-</section>
+  
+        {/* Enroll Button */}
+        <a
+          href={course.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-400 transition duration-300 text-white text-base sm:text-lg font-medium py-3 px-6 rounded-lg shadow-lg"
+        >
+          Enroll Now <FaArrowRight className="ml-2" />
+        </a>
+      </motion.div>
+    </div>
+  </section>
+  
 
   );
 }
