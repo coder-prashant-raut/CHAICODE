@@ -69,12 +69,12 @@ const Cohorts = () => {
       {/* Cards Scroll Row */}
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide gap-6 px-2 pb-2"
+        className="flex h-auto overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide gap-6 px-2 pb-2"
         role="region" // Defines this section as a region for screen readers
         aria-label="Course carousel" // Provides context to users about the section
       >
         {courses.map((course) => (
-          <div key={course.id} className="snap-start flex-shrink-0" aria-labelledby={`course-${course.id}`}>
+          <div key={course.id} className="snap-start flex-shrink-0 py-3" aria-labelledby={`course-${course.id}`}>
             <Card {...course} aria-labelledby={`course-${course.id}`} />
           </div>
         ))}

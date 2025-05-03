@@ -44,7 +44,11 @@ const Card = ({
   return (
     <motion.div
     key={id}
-    className="w-full max-w-xs sm:max-w-sm md:max-w-[360px] lg:max-w-[380px] mx-auto h-auto bg-[#0f0f0f] border-2 border-orange-300 rounded-2xl shadow-xl overflow-hidden flex-shrink-0 snap-center"
+    className="w-full max-w-xs sm:max-w-sm md:max-w-[360px] lg:max-w-[380px] mx-auto h-auto 
+    bg-[#0f0f0f] border-2 border-orange-300 rounded-2xl overflow-hidden 
+    flex-shrink-0 snap-center shadow-md transition-all duration-300 ease-in-out 
+    hover:shadow-orange-400/20 hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02]"
+    
     initial={{ scale: 0.9, opacity: 0.85 }}
     whileInView={{ scale: 1, opacity: 1 }}
     viewport={{ once: true, amount: 0.5 }}
@@ -99,11 +103,15 @@ const Card = ({
       </div>
   
       <button
-        aria-label={`Enroll in ${title} for ${price}`}
-        className="w-full bg-gradient-to-tr from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-300 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow-md transition duration-300"
-      >
-        Enroll for {price}
-      </button>
+  aria-label={`Enroll in ${title} for ${price}`}
+  className="w-full bg-gradient-to-tr from-orange-500 to-orange-600 
+  hover:from-orange-600 hover:to-orange-400 hover:shadow-md hover:shadow-orange-500/30 
+  cursor-pointer text-white font-semibold text-sm px-4 py-2 rounded-lg 
+  transition-all duration-300 ease-in-out transform hover:scale-[1.03]"
+>
+  Enroll for {price}
+</button>
+
     </div>
   </motion.div>
   
