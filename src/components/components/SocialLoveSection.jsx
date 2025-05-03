@@ -73,11 +73,12 @@ export default function SocialLoveSection() {
       role="list"
       aria-label="Auto-scrolling social appreciation posts"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 animate-scroll">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 animate-scroll ">
         {allPosts.map((post, index) => (
           <article
             key={index}
-            className="border border-gray-600 p-6 rounded-2xl bg-transparent backdrop-blur-sm shadow-lg flex flex-col gap-3 font-mono hover:scale-105 transition-transform duration-300"
+            className="border border-gray-600 p-6 rounded-2xl bg-transparent backdrop-blur-sm shadow-lg flex flex-col gap-3 font-mono hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 ease-in-out
+"
             role="listitem"
             aria-label={`Post by ${post.name} on ${post.platform}`}
           >

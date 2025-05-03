@@ -41,7 +41,8 @@ export default function StudentsCompanyShowcase() {
             <div
               key={index}
               role="listitem"
-              className="bg-[#1f2233] px-6 py-4 rounded-2xl text-sm md:text-base flex-shrink-0 border border-blue-600/30 hover:scale-105 hover:border-blue-400/70 transition duration-300 shadow-xl backdrop-blur-md"
+              className="bg-[#1f2233] px-6 py-4 rounded-2xl text-sm md:text-base flex-shrink-0 border border-blue-600/30 hover:scale-105 hover:shadow-md hover:shadow-blue-500/20 transition-all duration-300 ease-in-out
+ backdrop-blur-md"
             >
               <div className="text-orange-100 font-semibold">{item.student}</div>
               <div className="text-blue-400 text-sm">{item.role}</div>
