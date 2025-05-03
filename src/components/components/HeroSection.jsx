@@ -148,7 +148,7 @@ const HeroSection = () => {
     aria-label="Check all live cohorts"
   >
     <FaLaptopCode className="text-orange-400 text-lg animate-pulse" />
-    <span className="flex items-center gap-2">
+    <span className="flex items-center gap-2 cursor-pointer">
       Check All <span className="text-orange-400 font-bold">Live</span> Cohorts
       <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" aria-hidden="true"></span>
     </span>
