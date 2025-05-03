@@ -5,10 +5,10 @@ import chailogowhite from "../../assets/chaicode-white.png";
 import chailogoblack from "../../assets/chaicode-black.png";
 
 const navItems = [
-  { id: "cohort", label: "Cohort", icon: GraduationCap },
-  { id: "udemy", label: "Udemy", icon: BookOpen },
-  { id: "docs", label: "Docs", icon: FileText },
-  { id: "reviews", label: "Reviews", icon: Star },
+  { id: "cohort", label: "Cohort", icon: GraduationCap, size: 20 },
+  { id: "udemy", label: "Udemy", icon: BookOpen, size: 16 },
+  { id: "docs", label: "Docs", icon: FileText, size: 16 },
+  { id: "reviews", label: "Reviews", icon: Star, size: 16 },
 ];
 
 export default function Navbar() {
@@ -83,7 +83,7 @@ export default function Navbar() {
                           : "text-orange-100 hover:text-orange-300"
                       }`}
                     >
-                      <Icon size={16} aria-hidden="true" />
+                      <Icon size={item.size} aria-hidden="true" />
                       {item.label}
                     </a>
                   </li>
@@ -121,7 +121,7 @@ export default function Navbar() {
             }`}
           >
             <ul
-              className={`max-w-7xl mx-auto px-4 pb-6 pt-2 flex flex-col gap-4 shadow-md rounded-b-xl ${
+              className={`max-w-7xl  mx-auto px-4 pb-6 pt-2 flex flex-col items-center gap-4 shadow-md rounded-b-xl ${
                 scrolled ? "bg-white text-black" : "bg-slate-900 text-white"
               }`}
               role="menu"
@@ -130,7 +130,7 @@ export default function Navbar() {
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <li key={item.id} role="none">
+                  <li key={item.id} role="none"> 
                     <a
                       href={`#${item.id}`}
                       onClick={handleLinkClick}
