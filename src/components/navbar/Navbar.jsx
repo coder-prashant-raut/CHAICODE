@@ -121,7 +121,7 @@ export default function Navbar() {
             }`}
           >
             <ul
-              className={`max-w-7xl  mx-auto px-4 pb-6 pt-2 flex flex-col items-center gap-4 shadow-md rounded-b-xl ${
+              className={`max-w-7xl  mx-auto px-4 pb-6 pt-2 flex flex-col  gap-4 shadow-md rounded-b-xl ${
                 scrolled ? "bg-white text-black" : "bg-slate-900 text-white"
               }`}
               role="menu"
