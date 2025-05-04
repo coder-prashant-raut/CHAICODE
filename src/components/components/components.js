@@ -14,7 +14,7 @@ import FreeAPIShowcase from "./FreeAPIShowcase ";
 import DevFaq from "./DevFaq";
 //background animations//
 import CodeBackground from "./CodeBackground";
+import GradientDivider from "./GradientDivider";
 
-
-export  {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection,CloudTopics,CommunitySection,FreeAPIShowcase,  DevFaq}
+export  {HeroSection, AuthorUdemyShowcase, Cohorts, KeyBenefits, Alumni, SocialLoveSection, AppDownloadSection, YoutubeShowcase, CodeBackground, StudentsCompanyShowcase, MobileRevealSection,CloudTopics,CommunitySection,FreeAPIShowcase, GradientDivider,  DevFaq}
 

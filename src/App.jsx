@@ -17,6 +17,7 @@ import {
   CloudTopics,
   CommunitySection,
   FreeAPIShowcase,
+  GradientDivider,
 } from "./components/components/components";
 
 // Import your new pages
@@ -33,46 +34,61 @@ function App() {
           element={
             <>
               <Navbar />
- 
-<div className="w-full max-w-full lg:max-w-7xl">
-<CodeBackground />
-              <HeroSection />
 
-              
-              <div id="reviews">
-                <SocialLoveSection />
+              <div className="w-full max-w-full lg:max-w-7xl">
+                <CodeBackground />
+                <HeroSection />
+
+                <GradientDivider />
+
+                <div id="reviews">
+                  <SocialLoveSection />
+                </div>
+                <GradientDivider />
+
+                <StudentsCompanyShowcase />
+                <GradientDivider />
+
+                <div id="cohort">
+                  <Cohorts />
+                </div>
+                <GradientDivider />
+
+                <div id="udemy">
+                  <AuthorUdemyShowcase />
+                </div>
+
+                <GradientDivider />
+
+                <KeyBenefits />
+                <GradientDivider />
+
+                <CloudTopics />
+                <GradientDivider />
+
+                <Alumni />
+                <GradientDivider />
+
+                <MobileRevealSection />
+                <GradientDivider />
+
+                <CommunitySection />
+                <GradientDivider />
+
+                <YoutubeShowcase />
+                <GradientDivider />
+
+                <div id="docs">
+                  <FreeAPIShowcase />
+                </div>
+                <GradientDivider />
+
+                <AppDownloadSection />
+                <GradientDivider />
+
+                <DevFaq />
+                <GradientDivider />
               </div>
-
-              <StudentsCompanyShowcase />
-
-
-              <div id="cohort">
-                <Cohorts />
-              </div>
-
-              <div id="udemy">
-                <AuthorUdemyShowcase />
-              </div>
-             
-              <KeyBenefits />
-
-
-              <CloudTopics />
-
-              <Alumni />
-              <MobileRevealSection />
-              <CommunitySection />
-
-              <YoutubeShowcase />
-
-
-              <div id="docs">
-                <FreeAPIShowcase />
-              </div>
-              <AppDownloadSection />
-              <DevFaq />
-</div>
-
 
               <Footer />
             </>
