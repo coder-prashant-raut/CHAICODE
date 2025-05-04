@@ -6,7 +6,7 @@ import logo from '../../assets/chaicode-white.png'
 export default function Footer() {
   return (
     <footer
-    className="relative w-full min-h-[80vh] bg-black text-gray-300 py-16 px-6 overflow-hidden group"
+    className="relative w-full min-h-[80vh] text-gray-300 py-16 px-6 overflow-hidden group"
     role="contentinfo"
     aria-label="ChaiOrCode footer"
   >
@@ -16,9 +16,9 @@ export default function Footer() {
       className="absolute inset-0 z-0 flex items-end justify-center opacity-10 pointer-events-none"
     >
       <motion.div
-        initial={{ opacity: 0.2 }}
-        animate={{ opacity: 0.2 }}
-        className="hidden md:block text-[13vw] font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-400 animate-pulse"
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 0.5 }}
+        className="hidden md:block text-[13vw] font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-orange-300 to-orange-600 animate-pulse"
         style={{ textShadow: '0 0 80px rgba(234,179,8,0.6)' }}
       >
         CHAICODE
